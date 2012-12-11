@@ -1,4 +1,5 @@
 *.pyc
+pjreddie/static
 
 # OS generated files #
 ######################
