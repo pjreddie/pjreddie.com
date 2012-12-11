@@ -1,0 +1,16 @@
+html, body{
+	margin:0;
+	padding:0;
+	background-color:transparent;
+}
+body{
+	padding-top:40px;
+}
+
+
+html{
+}
+
+.heading{
+	border-radius:0;
+}

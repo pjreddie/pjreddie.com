@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>{% block title %}Joseph Redmon{% endblock %}</title>
+		<link rel='stylesheet' media='screen' href='{{ STATIC_URL }}lib/bootstrap/css/bootstrap.min.css' />
+		<link rel='stylesheet' media='screen' href='{{ STATIC_URL }}css/base.css' />
+		<link rel='stylesheet' media='screen' href='{{ STATIC_URL }}lib/bootstrap/css/bootstrap-responsive.min.css' />
+	</head>
+
+	<body>
+		<div class="navbar navbar-fixed-top navbar-inverse">
+			<div class="navbar-inner">
+				<div class=container>
+					<ul class="nav">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Jobs</a></li>
+						<li><a href="#">Internships</a></li>
+						<li><a href="#">School Projects</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		{% block body %}
+		{% endblock %}
+		<script src='{{ STATIC_URL }}lib/jquery/jquery-1.8.3.min.js'></script>
+		<script src='{{ STATIC_URL }}lib/bootstrap/js/bootstrap.min.js'></script>
+	</body>
+</html>
