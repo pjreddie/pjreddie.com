@@ -1,5 +1,10 @@
 Django==1.4.3
+Markdown==2.2.1
+PIL==1.1.7
+South==0.7.6
 distribute==0.6.31
+dj-database-url==0.2.1
 gunicorn==0.16.1
+psycopg2==2.4.6
 virtualenv==1.8.4
 wsgiref==0.1.2
