@@ -1,5 +1,6 @@
 *.pyc
 pjreddie/static
+*.dump
 
 # OS generated files #
 ######################

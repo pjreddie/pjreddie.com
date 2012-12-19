@@ -96,12 +96,12 @@ hr{
 hr.green{
 	background-color:#0f0;
 	height:.5em;
-	box-shadow: 0px 0px 10px 0px #0f0;
+	box-shadow: 0px 0px 100px 10px #0f0;
 }
 hr.blue{
 	background-color:#0ff;
 	height:.5em;
 	width:90%;
 	float:right;
-	box-shadow: 0px 0px 10px 0px #0ff;
+	box-shadow: 0px 0px 100px 10px #0ff;
 }
