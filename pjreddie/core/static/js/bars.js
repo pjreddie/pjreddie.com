@@ -1,30 +1,17 @@
 $(function(){
 
-	var green = $('hr.green');
-	var blue = $('hr.blue');
-	big = 0;
+	var green = $('div.green');
+	var blue = $('div.blue');
+	var light = $('div.light');
 	
 	function transition(){
-		var gw, bw, trans;
-		if(big){
-			gw = Math.random()*20 + 80;
-			bw = Math.random()*20 + 70;
-			green.removeClass("big").addClass("small");
-			blue.removeClass("big").addClass("small");
-		}else{
-			gw = Math.random()*30;
-			bw = Math.random()*30;
-			green.removeClass("small").addClass("big");
-			blue.removeClass("small").addClass("big");
-		}
-		green.css('width', gw+'%');
-		blue.css('width', bw+'%');
-		big = 1-big;
+		r = Math.round(Math.random()*10);
+		green.css('box-shadow', '0px 0px 100px ' + r + 'px #0f0');
+		r = Math.round(Math.random()*10);
+		blue.css('box-shadow', '0px 0px 100px ' + r + 'px #0ff');
+		p = Math.random()*100;
 	}
 
-	green.bind('transitionend', transition);
-	green.bind('webkitTransitionEnd', transition);
-	green.bind('otransitionend', transition);
+	var t = setInterval(transition, 1000);
 
-	transition();
 });
