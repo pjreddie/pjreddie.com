@@ -7,6 +7,11 @@ html, body{
 	font-weight:300;
 }
 
+a{
+	text-decoration:none;
+	color: inherit;
+}
+
 p{
 	font-weight:100;
 	letter-spacing:1px;

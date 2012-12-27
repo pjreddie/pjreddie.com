@@ -9,3 +9,8 @@ def index(request):
 def project(request, id):
 	p = Project.objects.get(id=id)
 	return render(request, 'project.html', {'project':p})
+
+
+def projects(request):
+	p = Project.objects.all()
+	return render(request, 'projects.html', {'projects':p})
