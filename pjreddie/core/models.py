@@ -22,10 +22,13 @@ class Image( models.Model ):
     def __unicode__( self ):
         return self.name
 
-class Post( models.Model ):
+class Project( models.Model ):
     title = models.CharField( max_length=100 )
     body = models.TextField()
     images = models.ManyToManyField( Image, blank=True )
 
     def html( self ):
         return markdown_to_html( self.body, self.images.all() )
+
+    def __unicode__( self ):
+		return self.title

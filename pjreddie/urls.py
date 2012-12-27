@@ -10,7 +10,7 @@ urlpatterns = patterns('',
     # url(r'^pjreddie/', include('pjreddie.foo.urls')),
 
     url(r'^$', 'pjreddie.core.views.index', name='index'),
-    url(r'^post/(?P<id>\d+)/$', 'pjreddie.core.views.post', name='post'),
+    url(r'^project/(?P<id>\d+)/$', 'pjreddie.core.views.project', name='project'),
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 

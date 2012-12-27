@@ -1,5 +1,5 @@
 from django.contrib import admin
-from pjreddie.core.models import Image, Post
+from pjreddie.core.models import Image, Project
 
 admin.site.register(Image)
-admin.site.register(Post)
+admin.site.register(Project)
