@@ -12,5 +12,5 @@ def project(request, id):
 
 
 def projects(request):
-	p = Project.objects.all()
+	p = Project.objects.all().order_by('-start')
 	return render(request, 'projects.html', {'projects':p})

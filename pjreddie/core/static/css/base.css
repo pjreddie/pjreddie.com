@@ -21,6 +21,12 @@ body{
 	color:#0ff;
 }
 
+hr{
+	width: 80%;
+	background-color:#0ff;
+	border:none;
+	height: 1px;
+}
 
 html{
 	background-color:#001;
@@ -32,7 +38,7 @@ html{
 
 .main{
 	margin:2em auto;
-	width:50em;
+	width:35em;
 }
 
 .main img{

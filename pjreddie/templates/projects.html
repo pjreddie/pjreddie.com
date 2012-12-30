@@ -1,9 +1,14 @@
 {% extends 'base.html' %}
-{% block title %}Projects{% endblock %}
-{% block body %}
-	<div class=main>
-		{% for project in projects %}
-		<h1><a href="{% url project project.id %}">{{ project.title }}</a></h1>
-		{% endfor %}
-	</div>
+	{% block head %}
+		<link rel='stylesheet' media='screen' href='{{ STATIC_URL }}css/projects.css' />
+	{% endblock %}
+	{% block title %}Projects{% endblock %}
+	{% block body %}
+		<div class=main>
+			<h1>Projects</h1>
+			{% for project in projects %}
+			<h3><a href="{% url project project.id %}">{{ project.title }}<span class=date>{{ project.formatted_date }}</span></a></h3>
+			<div class=break></div>
+			{% endfor %}
+		</div>
 {% endblock %}
