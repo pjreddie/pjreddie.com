@@ -24,10 +24,22 @@ class Image( models.Model ):
 
 class Project( models.Model ):
 	title = models.CharField( max_length=100 )
+	description = models.TextField(null=True, blank=True)
 	body = models.TextField()
 	images = models.ManyToManyField( Image, blank=True )
 	start = models.DateField(blank=True, null=True)
 	end = models.DateField(blank=True, null=True)
+	
+	RESEARCH = 'R'
+	SCHOOL = 'S'
+	PERSONAL = 'P'
+	PROJECT_KINDS = (
+		(RESEARCH, 'Research'),
+		(SCHOOL, 'School'),
+		(PERSONAL, 'Personal'),
+	)
+
+	kind = models.CharField(max_length=2, choices=PROJECT_KINDS, null=True, blank=True)
 
 	def formatted_date(self):
 		start = self.start

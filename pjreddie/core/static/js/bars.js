@@ -12,6 +12,6 @@ $(function(){
 		p = Math.random()*100;
 	}
 
-	var t = setInterval(transition, 1000);
+	var t = setInterval(transition, 500);
 
 });

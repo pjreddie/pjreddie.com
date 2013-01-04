@@ -7,8 +7,15 @@
 		<div class=main>
 			<h1>Projects</h1>
 			{% for project in projects %}
-			<h3><a href="{% url project project.id %}">{{ project.title }}<span class=date>{{ project.formatted_date }}</span></a></h3>
-			<div class=break></div>
+				<a href="{% url project project.id %}">
+					<div class=project>
+					<h3>{{ project.title }}<span class=date>{{ project.formatted_date }}</span></h3>
+					<div class=break></div>
+						{% if project.description %}
+							<p>{{ project.description }}</p>
+						{% endif %}
+					</div>
+				</a>
 			{% endfor %}
 		</div>
 {% endblock %}

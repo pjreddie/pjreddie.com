@@ -67,7 +67,6 @@ h1{
 h2{
 	font-weight:100;
 	color:#f80;
-	float:right;
 }
 h3{
 	font-weight:100;
@@ -107,10 +106,6 @@ div.green{
 	width:100%;
 	box-shadow: 0px 0px 100px 10px #0f0;
 	float:right;
-	transition:box-shadow 1s linear;
-	-moz-transition:box-shadow 1s linear; /* Firefox 4 */
-	-webkit-transition:box-shadow 1s linear; /* Safari and Chrome */
-	-o-transition:box-shadow 1s linear; /* Opera */
 }
 
 div.blue{
@@ -120,24 +115,21 @@ div.blue{
 	width:90%;
 	float:right;
 	box-shadow: 0px 0px 100px 10px #0ff;
-	transition:box-shadow 1s linear;
-	-moz-transition:box-shadow 1s linear; /* Firefox 4 */
-	-webkit-transition:box-shadow 1s linear; /* Safari and Chrome */
-	-o-transition:box-shadow 1s linear; /* Opera */
 }
 
-.light{
-	position:relative;
-	left:-10%;
-	width:2em;
-	height:.5em;
-	box-shadow: 0px 0px 50px 30px #0f0;
-	transition:left 1s linear;
-	-moz-transition:left 1s linear; /* Firefox 4 */
-	-webkit-transition:left 1s linear; /* Safari and Chrome */
-	-o-transition:left 1s linear; /* Opera */
+.bar{
+	transition:box-shadow .5s linear;
+	-moz-transition:box-shadow .5s linear; /* Firefox 4 */
+	-webkit-transition:box-shadow .5s linear; /* Safari and Chrome */
+	-o-transition:box-shadow .5s linear; /* Opera */
 }
+
 
 .top{
 	min-width:55em;
 }
+
+.sc{
+	font-variant:small-caps;
+}
+
