@@ -100,7 +100,7 @@ ul.nav li a:hover {
 div.break{
 	clear:both;
 }
-div.green{
+.bar.green{
 	background-color:#0f0;
 	height:.5em;
 	width:100%;
@@ -108,7 +108,7 @@ div.green{
 	float:right;
 }
 
-div.blue{
+.bar.blue{
 	margin:1em 0em;
 	background-color:#0ff;
 	height:.5em;
