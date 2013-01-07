@@ -1,6 +1,6 @@
 html, body{
 	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size:19px;
+	font-size:20px;
 	margin:0;
 	padding:0;
 	background-color:transparent;
@@ -59,7 +59,7 @@ html{
 }
 
 h1{
-	font-size:2.5em;
+	font-size:48px;
 	font-weight:100;
 	color:#f0f;
 	border-bottom:solid 1px #f0f;
