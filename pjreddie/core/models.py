@@ -22,6 +22,11 @@ class Image( models.Model ):
 	def __unicode__( self ):
 		return self.name
 
+class File(models.Model):
+	upload = models.FileField(upload_to="files")
+	def __unicode__(self):
+		return self.upload.url
+
 class Project( models.Model ):
 	title = models.CharField( max_length=100 )
 	description = models.TextField(null=True, blank=True)

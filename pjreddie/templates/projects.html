@@ -5,7 +5,9 @@
 	{% block title %}Projects{% endblock %}
 	{% block body %}
 		<div class=main>
+			<div class=title>
 			<h1>Projects</h1>
+			</div>
 			{% for project in projects %}
 				<a href="{% url project project.id %}">
 					<div class=project>

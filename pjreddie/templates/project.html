@@ -1,4 +1,7 @@
 {% extends 'base.html' %}
+	{% block head %}
+		<link rel='stylesheet' media='screen' href='{{ STATIC_URL }}css/project.css' />
+	{% endblock %}
 {% block body %}
 	<div class=main>
 		<h1>{{ project.title }}</h1>

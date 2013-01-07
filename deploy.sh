@@ -1,4 +1,4 @@
-pg_dump -Fc --no-acl --no-owner -h localhost pjreddie > pjreddie/media/database.dump
-git commit -a -m "Update database"
+/manage.py dumpdata core > pjreddie/core/fixtures/initial_data.json
+git commit -a -m "Update fixtures"
 git push heroku master
-heroku pgbackups:restore DATABASE "http://www.pjreddie.com/media/database.dump"
+heroku run python manage.py migrate
