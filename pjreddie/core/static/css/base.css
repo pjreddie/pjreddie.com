@@ -56,6 +56,7 @@ html{
 	text-align:right;
 	font-weight:normal;
 	border:none;
+	white-space:nowrap;
 }
 
 h1{
@@ -126,7 +127,7 @@ div.break{
 
 
 .top{
-	min-width:55em;
+	min-width:45em;
 }
 
 .sc{
