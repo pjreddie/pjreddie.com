@@ -14,6 +14,11 @@ framework.
 
 """
 import os
+import site
+import sys
+
+site.addsitedir('/envs/pjreddie.com/lib/python2.7/site-packages/')
+sys.path.append('/Users/pjreddie/Documents/Sites/pjreddie.com/')
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "pjreddie.settings")
 

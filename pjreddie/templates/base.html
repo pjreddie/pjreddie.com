@@ -23,11 +23,9 @@
 
 	<body>
 		<div class=top>
-			<h1 class="header">Joseph Chet Redmon</h1>
+			{% block header %}{% endblock %}
 			<div class='green bar'></div>
-			<div class=break></div>
 			<div class='blue bar'></div>
-			<div class=break></div>
 			<ul class="nav">
 				<li><a href="/">home</a></li>
 				<li><a href="/projects/">projects</a></li>
@@ -37,8 +35,10 @@
 		</div>
 		{% block body %}
 		{% endblock %}
+        {% comment %}
 		<script src='{{ STATIC_URL }}lib/jquery/jquery-1.8.3.min.js'></script>
 		<script src='{{ STATIC_URL }}js/bars.js'></script>
+        {% endcomment %}
 
 	</body>
 </html>

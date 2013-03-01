@@ -37,8 +37,7 @@ html{
 }
 
 .main{
-	margin:2em auto;
-	width:35em;
+	margin:2em 3.5em;
 }
 
 .main img{
@@ -56,7 +55,6 @@ html{
 	text-align:right;
 	font-weight:normal;
 	border:none;
-	white-space:nowrap;
 }
 
 h1{
@@ -78,22 +76,22 @@ h4{
 	color:#f00;
 }
 
-
-
 ul.nav{
 	font-family: Monaco, "Lucida Console", monospace;
 	list-style-type:none;
 	margin:0;
+    margin-left:3.5em;
 	padding:0;
-	float:right;
+    z-index:9;
 }
 ul.nav li{
-	display:inline;
+	float:left;
+    margin:1em 1em 1em 0em;
 }
 ul.nav li a{
 	text-decoration:none;
 	color:#0ff;
-	padding:1em 4em;
+	padding:1em 5em 1em 0em;
 }
 ul.nav li a:hover {
 	border-bottom:solid 3px #0FF;
@@ -105,16 +103,13 @@ div.break{
 	background-color:#0f0;
 	height:.5em;
 	width:100%;
-	box-shadow: 0px 0px 100px 10px #0f0;
-	float:right;
+	box-shadow: 0px 0px 50px 0px #0f0;
 }
 
 .bar.blue{
-	margin:1em 0em;
+	margin:1em 0em 0em 3.5em;
 	background-color:#0ff;
 	height:.5em;
-	width:90%;
-	float:right;
 	box-shadow: 0px 0px 100px 10px #0ff;
 }
 
@@ -123,11 +118,6 @@ div.break{
 	-moz-transition:box-shadow .5s linear; /* Firefox 4 */
 	-webkit-transition:box-shadow .5s linear; /* Safari and Chrome */
 	-o-transition:box-shadow .5s linear; /* Opera */
-}
-
-
-.top{
-	min-width:45em;
 }
 
 .sc{
