@@ -6,7 +6,13 @@ html, body{
 	background-color:transparent;
 	font-weight:300;
 }
-
+pre{
+    padding:1em;
+    background-color:#205;
+}
+code{
+    color:#0f0;
+}
 a{
 	text-decoration:none;
 	color: inherit;
