@@ -13,7 +13,7 @@ urlpatterns = patterns('',
 	# url(r'^pjreddie/', include('pjreddie.foo.urls')),
 
 	url(r'^$', 'pjreddie.core.views.index', name='index'),
-	url(r'^project/(?P<slug>[-\w]+)/$', 'pjreddie.core.views.project', name='project'),
+	url(r'^projects/(?P<slug>[-\w]+)/$', 'pjreddie.core.views.project', name='project'),
 	url(r'^projects/$', 'pjreddie.core.views.projects', name='projects'),
 	url(r'^blog/$', 'pjreddie.core.views.blog', name='blog'),
 	# Uncomment the admin/doc line below to enable admin documentation:
