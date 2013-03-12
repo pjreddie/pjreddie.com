@@ -1,5 +1,5 @@
 # Create your views here.
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404, render
 from pjreddie.core.models import Project
 
 def index(request):
@@ -8,8 +8,8 @@ def index(request):
 def resume(request):
 	return render(request, 'resume.html')
 
-def project(request, id):
-	p = Project.objects.get(id=id)
+def project(request, slug):
+	p = get_object_or_404(Project, slug = slug)
 	return render(request, 'project.html', {'project':p})
 
 def projects(request):

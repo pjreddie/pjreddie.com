@@ -9,7 +9,7 @@
 			<h1>Projects</h1>
 			</div>
 			{% for project in projects %}
-				<a href="{% url project project.id %}">
+				<a href="{% url project project.slug %}">
 					<div class=project>
 					<h3>{{ project.title }}<span class=date>{{ project.formatted_date }}</span></h3>
 					<div class=break></div>
