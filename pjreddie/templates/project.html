@@ -1,10 +1,12 @@
 {% extends 'base.html' %}
 	{% block head %}
 		<link rel='stylesheet' media='screen' href='{{ STATIC_URL }}css/project.css' />
-	{% endblock %}
-{% block body %}
+        <meta name="description" content="{{ project.description }}">
+    {% endblock %}
+	{% block title %}{{ project.title }}{% endblock %}
+    {% block body %}
 	<div class=main>
 		<h1>{{ project.title }}</h1>
 		{{ project.html|safe }}
 	</div>
-{% endblock %}
+    {% endblock %}
