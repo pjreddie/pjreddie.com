@@ -122,4 +122,16 @@ div.break{
 .sc{
 	font-variant:small-caps;
 }
+blockquote{
+    margin-top:40px;
+    padding:0px 20px;
+    border-left:3px #0ff solid;
+    font-family:georgia;
+}
+footer{
+    margin-left:40px;
+    font-size:16px;
+    font-style:italic;
+    margin-top:10px;
+}
 
