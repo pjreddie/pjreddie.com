@@ -1,3 +1,9 @@
 #ponies{
     text-align:center;
 }
+#external{
+    text-align:center;
+}
+#external img{
+    max-height:120px;
+}
