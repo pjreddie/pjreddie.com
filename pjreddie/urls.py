@@ -1,7 +1,6 @@
 from django.conf.urls import patterns, include, url
-from django.utils.http import urlquote
-from django.utils.encoding import iri_to_uri
 from django.conf import settings
+from django.views.generic.simple import redirect_to
 
 
 from django.contrib import admin
@@ -16,6 +15,7 @@ urlpatterns = patterns('',
 	url(r'^projects/(?P<slug>[-\w]+)/$', 'pjreddie.core.views.project', name='project'),
 	url(r'^projects/$', 'pjreddie.core.views.projects', name='projects'),
 	url(r'^blog/$', 'pjreddie.core.views.blog', name='blog'),
+	url(r'^resume/$', redirect_to, {'url':'/static/Redmon Resume.pdf'}),
 	# Uncomment the admin/doc line below to enable admin documentation:
 	# url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
