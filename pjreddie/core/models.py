@@ -16,13 +16,6 @@ def markdown_to_html( markdownText, images ):
 
     return html
 
-class Image( models.Model ):
-    name = models.CharField( max_length=100 )
-    image = models.ImageField( upload_to="image" )
-
-    def __unicode__( self ):
-        return self.name
-
 class File(models.Model):
     upload = models.FileField(upload_to="files")
     def __unicode__(self):
@@ -32,7 +25,6 @@ class Project( models.Model ):
     title = models.CharField( max_length=100 )
     description = models.TextField(null=True, blank=True)
     body = models.TextField()
-    images = models.ManyToManyField( Image, blank=True )
     start = models.DateField(blank=True, null=True)
     end = models.DateField(blank=True, null=True)
     slug = models.SlugField(blank=True, null=True)
@@ -72,3 +64,11 @@ class Project( models.Model ):
 
     def __unicode__( self ):
         return self.title
+
+class Image( models.Model ):
+    name = models.CharField( max_length=100 )
+    image = models.ImageField( upload_to="image" )
+    project = models.ForeignKey(Project, blank=True, null=True, related_name = "images")
+
+    def __unicode__( self ):
+        return self.name
