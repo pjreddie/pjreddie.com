@@ -1,5 +1,6 @@
 *.pyc
 */static
+local_settings.py
 
 # OS generated files #
 ######################
