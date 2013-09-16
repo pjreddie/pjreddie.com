@@ -27,6 +27,7 @@ DATABASES = {'default':{
         'NAME': 'pjreddie',
     }
 }
+
 if PRODUCTION:
     DATABASES['default']['NAME'] = 'pjreddie_production'
 
