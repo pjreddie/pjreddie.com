@@ -1,8 +1,14 @@
 # Django settings for pjreddie project.
 import os
-import dj_database_url
 
-DEBUG = True
+PRODUCTION = True
+
+try:
+    from local_settings import *
+except ImportError:
+    pass
+
+DEBUG = not PRODUCTION
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -16,7 +22,11 @@ def get_path(p):
 
 MANAGERS = ADMINS
 
-DATABASES = {'default':dj_database_url.config(default='postgres://localhost/pjreddie')}
+DATABASES = {'default':{
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'pjreddie',
+    }
+}
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
