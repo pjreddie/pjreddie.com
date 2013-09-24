@@ -22,14 +22,22 @@ def get_path(p):
 
 MANAGERS = ADMINS
 
+"""
 DATABASES = {'default':{
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'pjreddie',
+        'HOST': 'localhost',
     }
 }
 
 if PRODUCTION:
     DATABASES['default']['NAME'] = 'pjreddie_production'
+"""
+DATABASES = {'default':{
+        'ENGINE':'django.db.backends.sqlite3',
+        'NAME':get_path('../database.sqlite'),
+    }
+}
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name

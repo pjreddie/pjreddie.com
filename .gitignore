@@ -1,6 +1,7 @@
 *.pyc
 */static
 local_settings.py
+database.sqlite
 
 # OS generated files #
 ######################

@@ -14,6 +14,7 @@ urlpatterns = patterns('',
 	url(r'^$', 'pjreddie.core.views.index', name='index'),
 	url(r'^projects/(?P<slug>[-\w]+)/$', 'projects.views.project', name='project'),
 	url(r'^projects/$', 'projects.views.projects', name='projects'),
+	url(r'^reading_list/$', 'readinglist.views.readinglist', name='readinglist'),
 	url(r'^blog/$', 'pjreddie.core.views.blog', name='blog'),
 	url(r'^resume/$', redirect_to, {'url':'/static/Redmon Resume.pdf'}),
 	# Uncomment the admin/doc line below to enable admin documentation:
