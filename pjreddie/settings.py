@@ -128,6 +128,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 	'pjreddie.core',
+    'projects',
+    'readinglist',
     'django.contrib.admin',
 	'south',
     # Uncomment the next line to enable admin documentation:
