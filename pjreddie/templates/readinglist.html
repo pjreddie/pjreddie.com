@@ -9,24 +9,23 @@
 			<div class=title>
 			<h1>Reading List</h1>
 			</div>
-			{% for paper in papers %}
-					<div class=paper>
-                    <table><tr>
-                        <td><h3>{{ paper.title }}</h3></td>
-                        <td>
-                        {% if paper.pdf %}
-                            <a class=button href="{{ paper.pdf.url }}">PDF</a>
-                        {% endif %}
-                        {% if paper.url %}
-                            <a class=button href="{{ paper.url }}">Link</a>
-                        {% endif %}
-                        </td>
-                        </tr></table>
-                        <div class=break></div>
-						{% if paper.description %}
-							<p>{{ paper.description }}</p>
-						{% endif %}
-					</div>
+            {% for category in categories %}
+                {% if category.papers.all %}
+                    <h2>{{ category.name }}</h2>
+                    {% for paper in category.papers.all %}
+                        {% include "paper.html" %}
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
+            {% if uncategorized %}
+                <h2>Other</h2>
+            {% endif %}
+			{% for paper in uncategorized %}
+                {% include "paper.html" %}
 			{% endfor %}
 		</div>
+        <form action = "." method="post"> {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Go!" />
+        </form>
 {% endblock %}

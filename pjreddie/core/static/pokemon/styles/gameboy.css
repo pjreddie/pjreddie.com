@@ -1,0 +1,124 @@
+.pokemon-logo{
+    position:absolute;
+    top:-120px;
+    z-index:1;
+    height:500px;
+    right:50%;
+}
+.heart-logo{
+    position:absolute;
+    bottom:200px;
+    z-index:1;
+    height:500px;
+    left:40%;
+}
+.pokeList{
+display:none;
+}
+.poke{
+
+}
+.cocktail{
+    z-index: -2;
+    position:absolute;
+    width:100px;
+    bottom:120px;
+    left:100px;
+}
+.topPoke{
+z-index:-3;
+position:absolute;
+right:10px;
+top:30px;
+}
+.bottomPoke{
+z-index:-1;
+position:absolute;
+left:10px;
+bottom:70px;
+}
+
+.heart{
+    height:12px;
+    margin-left:4px;
+    margin-top:3px;
+}
+.info{
+    font-size:12px;
+    position: absolute;
+    padding:4px;
+    width:50%;
+    height: 50px;
+    border: 3px solid #333;
+    border-radius: 10px 5px;
+    background-color:#eee;
+}
+.topInfo{
+    top:10px;
+    left: 10px;
+}
+.bottomInfo{
+    width: 50%;
+    right:10px;
+    bottom:90px;
+}
+.backbar{
+    position:relative;
+    margin:0 auto;
+    background-color:#333;
+  border-radius: 10px;
+}
+
+.bar{
+    position:absolute;
+    right:2px;
+    display:inline-block;
+    margin-left:1px;
+    width:80%;
+    height:12px;
+    margin-top:2px;
+  border-radius: 10px;
+    overflow:hidden;
+}
+
+.topBar {
+}
+.bottomBar {
+}
+
+#screen{
+    width:302px;
+    height:279px;
+    position:relative;
+    top:120px;
+    left: -2px;
+    margin: 0 auto;
+    overflow:hidden;
+    border-radius:10px;
+    background-color:#eee;
+    z-index:3;
+}
+#gameboy{
+    position:relative;
+    background:url('../gameboy.svg') no-repeat;
+    margin:0 auto;
+    width:590px;
+    height:960px;
+    z-index:0;
+}
+@font-face{
+    font-family:gameboy;
+    src: url('gameboy.ttf');
+}
+body{
+background-attachment:fixed;
+
+    background-image: url('../landscape.jpg');
+        background-size: cover;
+            background-repeat: no-repeat;
+}
+body, html{
+    font-family:gameboy !important;
+    margin:0;
+    padding:0;
+}

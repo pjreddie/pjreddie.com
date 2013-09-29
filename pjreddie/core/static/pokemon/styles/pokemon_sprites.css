@@ -1,0 +1,990 @@
+.pokemon-1 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -0px -0px;
+}
+
+.pokemon-2 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -120px -0px;
+}
+
+.pokemon-3 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -240px -0px;
+}
+
+.pokemon-4 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -360px -0px;
+}
+
+.pokemon-5 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -480px -0px;
+}
+
+.pokemon-6 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -600px -0px;
+}
+
+.pokemon-7 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -720px -0px;
+}
+
+.pokemon-8 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -840px -0px;
+}
+
+.pokemon-9 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -960px -0px;
+}
+
+.pokemon-10 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1080px -0px;
+}
+
+.pokemon-11 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1200px -0px;
+}
+
+.pokemon-12 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1320px -0px;
+}
+
+.pokemon-13 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1440px -0px;
+}
+
+.pokemon-14 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1560px -0px;
+}
+
+.pokemon-15 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1680px -0px;
+}
+
+.pokemon-16 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -0px -120px;
+}
+
+.pokemon-17 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -120px -120px;
+}
+
+.pokemon-18 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -240px -120px;
+}
+
+.pokemon-19 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -360px -120px;
+}
+
+.pokemon-20 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -480px -120px;
+}
+
+.pokemon-21 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -600px -120px;
+}
+
+.pokemon-22 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -720px -120px;
+}
+
+.pokemon-23 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -840px -120px;
+}
+
+.pokemon-24 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -960px -120px;
+}
+
+.pokemon-25 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1080px -120px;
+}
+
+.pokemon-26 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1200px -120px;
+}
+
+.pokemon-27 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1320px -120px;
+}
+
+.pokemon-28 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1440px -120px;
+}
+
+.pokemon-29 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1560px -120px;
+}
+
+.pokemon-30 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1680px -120px;
+}
+
+.pokemon-31 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -0px -240px;
+}
+
+.pokemon-32 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -120px -240px;
+}
+
+.pokemon-33 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -240px -240px;
+}
+
+.pokemon-34 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -360px -240px;
+}
+
+.pokemon-35 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -480px -240px;
+}
+
+.pokemon-36 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -600px -240px;
+}
+
+.pokemon-37 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -720px -240px;
+}
+
+.pokemon-38 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -840px -240px;
+}
+
+.pokemon-39 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -960px -240px;
+}
+
+.pokemon-40 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1080px -240px;
+}
+
+.pokemon-41 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1200px -240px;
+}
+
+.pokemon-42 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1320px -240px;
+}
+
+.pokemon-43 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1440px -240px;
+}
+
+.pokemon-44 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1560px -240px;
+}
+
+.pokemon-45 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1680px -240px;
+}
+
+.pokemon-46 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -0px -360px;
+}
+
+.pokemon-47 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -120px -360px;
+}
+
+.pokemon-48 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -240px -360px;
+}
+
+.pokemon-49 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -360px -360px;
+}
+
+.pokemon-50 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -480px -360px;
+}
+
+.pokemon-51 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -600px -360px;
+}
+
+.pokemon-52 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -720px -360px;
+}
+
+.pokemon-53 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -840px -360px;
+}
+
+.pokemon-54 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -960px -360px;
+}
+
+.pokemon-55 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1080px -360px;
+}
+
+.pokemon-56 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1200px -360px;
+}
+
+.pokemon-57 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1320px -360px;
+}
+
+.pokemon-58 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1440px -360px;
+}
+
+.pokemon-59 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1560px -360px;
+}
+
+.pokemon-60 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1680px -360px;
+}
+
+.pokemon-61 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -0px -480px;
+}
+
+.pokemon-62 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -120px -480px;
+}
+
+.pokemon-63 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -240px -480px;
+}
+
+.pokemon-64 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -360px -480px;
+}
+
+.pokemon-65 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -480px -480px;
+}
+
+.pokemon-66 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -600px -480px;
+}
+
+.pokemon-67 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -720px -480px;
+}
+
+.pokemon-68 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -840px -480px;
+}
+
+.pokemon-69 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -960px -480px;
+}
+
+.pokemon-70 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1080px -480px;
+}
+
+.pokemon-71 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1200px -480px;
+}
+
+.pokemon-72 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1320px -480px;
+}
+
+.pokemon-73 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1440px -480px;
+}
+
+.pokemon-74 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1560px -480px;
+}
+
+.pokemon-75 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1680px -480px;
+}
+
+.pokemon-76 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -0px -600px;
+}
+
+.pokemon-77 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -120px -600px;
+}
+
+.pokemon-78 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -240px -600px;
+}
+
+.pokemon-79 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -360px -600px;
+}
+
+.pokemon-80 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -480px -600px;
+}
+
+.pokemon-81 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -600px -600px;
+}
+
+.pokemon-82 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -720px -600px;
+}
+
+.pokemon-83 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -840px -600px;
+}
+
+.pokemon-84 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -960px -600px;
+}
+
+.pokemon-85 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1080px -600px;
+}
+
+.pokemon-86 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1200px -600px;
+}
+
+.pokemon-87 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1320px -600px;
+}
+
+.pokemon-88 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1440px -600px;
+}
+
+.pokemon-89 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1560px -600px;
+}
+
+.pokemon-90 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1680px -600px;
+}
+
+.pokemon-91 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -0px -720px;
+}
+
+.pokemon-92 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -120px -720px;
+}
+
+.pokemon-93 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -240px -720px;
+}
+
+.pokemon-94 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -360px -720px;
+}
+
+.pokemon-95 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -480px -720px;
+}
+
+.pokemon-96 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -600px -720px;
+}
+
+.pokemon-97 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -720px -720px;
+}
+
+.pokemon-98 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -840px -720px;
+}
+
+.pokemon-99 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -960px -720px;
+}
+
+.pokemon-100 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1080px -720px;
+}
+
+.pokemon-101 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1200px -720px;
+}
+
+.pokemon-102 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1320px -720px;
+}
+
+.pokemon-103 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1440px -720px;
+}
+
+.pokemon-104 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1560px -720px;
+}
+
+.pokemon-105 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1680px -720px;
+}
+
+.pokemon-106 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -0px -840px;
+}
+
+.pokemon-107 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -120px -840px;
+}
+
+.pokemon-108 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -240px -840px;
+}
+
+.pokemon-109 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -360px -840px;
+}
+
+.pokemon-110 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -480px -840px;
+}
+
+.pokemon-111 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -600px -840px;
+}
+
+.pokemon-112 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -720px -840px;
+}
+
+.pokemon-113 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -840px -840px;
+}
+
+.pokemon-114 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -960px -840px;
+}
+
+.pokemon-115 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1080px -840px;
+}
+
+.pokemon-116 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1200px -840px;
+}
+
+.pokemon-117 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1320px -840px;
+}
+
+.pokemon-118 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1440px -840px;
+}
+
+.pokemon-119 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1560px -840px;
+}
+
+.pokemon-120 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1680px -840px;
+}
+
+.pokemon-121 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -0px -960px;
+}
+
+.pokemon-122 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -120px -960px;
+}
+
+.pokemon-123 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -240px -960px;
+}
+
+.pokemon-124 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -360px -960px;
+}
+
+.pokemon-125 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -480px -960px;
+}
+
+.pokemon-126 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -600px -960px;
+}
+
+.pokemon-127 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -720px -960px;
+}
+
+.pokemon-128 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -840px -960px;
+}
+
+.pokemon-129 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -960px -960px;
+}
+
+.pokemon-130 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1080px -960px;
+}
+
+.pokemon-131 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1200px -960px;
+}
+
+.pokemon-132 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1320px -960px;
+}
+
+.pokemon-133 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1440px -960px;
+}
+
+.pokemon-134 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1560px -960px;
+}
+
+.pokemon-135 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1680px -960px;
+}
+
+.pokemon-136 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -0px -1080px;
+}
+
+.pokemon-137 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -120px -1080px;
+}
+
+.pokemon-138 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -240px -1080px;
+}
+
+.pokemon-139 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -360px -1080px;
+}
+
+.pokemon-140 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -480px -1080px;
+}
+
+.pokemon-141 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -600px -1080px;
+}
+
+.pokemon-142 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -720px -1080px;
+}
+
+.pokemon-143 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -840px -1080px;
+}
+
+.pokemon-144 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -960px -1080px;
+}
+
+.pokemon-145 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1080px -1080px;
+}
+
+.pokemon-146 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1200px -1080px;
+}
+
+.pokemon-147 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1320px -1080px;
+}
+
+.pokemon-148 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1440px -1080px;
+}
+
+.pokemon-149 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1560px -1080px;
+}
+
+.pokemon-150 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1680px -1080px;
+}
+
+.pokemon-151 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -0px -1200px;
+}
+
+.pokemon-152 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -120px -1200px;
+}
+
+.pokemon-153 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -240px -1200px;
+}
+
+.pokemon-154 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -360px -1200px;
+}
+
+.pokemon-155 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -480px -1200px;
+}
+
+.pokemon-156 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -600px -1200px;
+}
+
+.pokemon-157 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -720px -1200px;
+}
+
+.pokemon-158 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -840px -1200px;
+}
+
+.pokemon-159 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -960px -1200px;
+}
+
+.pokemon-160 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1080px -1200px;
+}
+
+.pokemon-161 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1200px -1200px;
+}
+
+.pokemon-162 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1320px -1200px;
+}
+
+.pokemon-163 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1440px -1200px;
+}
+
+.pokemon-164 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1560px -1200px;
+}
+
+.pokemon-165 {
+width: 120px;
+height: 120px;
+background: url(pokemon.png) -1680px -1200px;
+}
+

@@ -1,0 +1,73 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+       <script src="scripts/speakClient.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/pokemon_sprites.css">
+        <link rel="stylesheet" href="styles/gameboy.css">
+        <link rel='stylesheet' href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+        <!-- endbuild -->
+    </head>
+    <body>
+      <div id="audio"></div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+        <div id=gameboy>
+          <div id=screen>
+            <div id=stuff></div>
+          </div>
+        <img class="pokemon-logo" src="pokemon-logo.png" />
+        <img class="heart-logo" src="heart-logo.png" />
+      </div>
+      <audio controls autoplay loop style="display:none;">
+          <source src="theme.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+      <!-- build:js scripts/vendor.js -->
+      <!-- bower:js -->
+      <script src="bower_components/jquery/jquery.js"></script>
+
+      <!-- endbower -->
+      <!-- endbuild -->
+      <script src="bower_components/react/react.js"></script>
+      <script src="bower_components/react/JSXTransformer.js"></script>
+      <script type='text/jsx' src="scripts/main.js"></script>
+      <script type='text/jsx' src="scripts/menu.js"></script>
+      <script type='text/jsx' src="scripts/bars.js"></script>
+       <script src="scripts/monstermodels.js"></script>
+
+
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+          e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+          e.src='//www.google-analytics.com/analytics.js';
+          r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+      </script>
+
+    </body>
+  </html>

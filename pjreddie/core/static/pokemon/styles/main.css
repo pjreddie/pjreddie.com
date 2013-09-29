@@ -1,0 +1,71 @@
+.menu{
+position: absolute;
+width: 100%;
+bottom:0;
+z-index:2;
+background-color:#ddd;
+border-top:3px solid #333;
+}
+.menuItem:hover {
+  cursor: pointer;
+}
+.menuItem:hover:before {
+    content:">";
+    margin-left:-8px;
+}
+.menuItem{
+    padding-top:10px;
+    padding-bottom:10px;
+    text-transform: uppercase;
+}
+
+.hit-base {
+  opacity: 1.0;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.hit {
+  opacity: 0.2
+}
+
+.died {
+  -webkit-transform: translate(124px, -50px)
+}
+
+.died.op {
+  -webkit-transform: translate(-124px, 50px)
+}
+
+.heart-icon {
+  -webkit-transform: translate(194px, -5px);
+}
+
+.heart-icon.op {
+  -webkit-transform: translate(34px, 50px);
+}
+
+.poke {
+  tansition: -webkit-transform, 1s ease-in-out;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+}
+
+.lose {
+  height: 280px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.win {
+  height: 280px;
+  background-color: rgb(51, 82, 207);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  padding-top: 100px;
+}
+  }

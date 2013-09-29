@@ -1,0 +1,1695 @@
+{
+	"struggle": {
+		"name": "Struggle",
+		"type": "normal",
+		"pp": 35,
+		"pp_max": 56,
+		"power": 35,
+		"accuracy": 0.95,
+		"contact": true,
+		"moveType": "simple"
+	},
+	
+	"air cutter": { 
+		"name": "Air Cutter",
+		"type": "flying",
+		"pp": 25,
+		"pp_max": 40,
+		"power": 55,
+		"accuracy": 0.95,
+		"contact": false,
+		"moveType": "simple",
+		"special": true
+	},
+	
+	"crabhammer": {
+		"name": "Crabhammer",
+		"type": "water",
+		"pp": 10,
+		"pp_max": 16,
+		"power": 90,
+		"accuracy": 0.85,
+		"contact": true,
+		"moveType": "simple",
+		"highCritical": true
+	},
+	
+	"cross chop": {
+		"name": "Cross Chop",
+		"type": "fighting",
+		"pp": 5,
+		"pp_max": 8,
+		"power": 100,
+		"accuracy": 0.80,
+		"contact": true,
+		"moveType": "simple",
+		"highCritical": true
+	},
+	
+	"drill peck": {
+		"name": "Drill Peck",
+		"type": "flying",
+		"pp": 20,
+		"pp_max": 32,
+		"power": 80,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple"
+	},
+	
+	"egg bomb": {
+		"name": "Egg Bomb",
+		"type": "normal",
+		"pp": 10,
+		"pp_max": 16,
+		"power": 100,
+		"accuracy": 0.75,
+		"contact": false,
+		"moveType": "simple"
+	},
+	
+	"featherdance": {
+		"name": "FeatherDance",
+		"type": "flying",
+		"pp": 15,
+		"pp_max": 24,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "debuff",
+		"debuffStat": "atk",
+		"debuffAmount":	2
+	},
+	
+	"growl": {
+		"name": "Growl",
+		"type": "normal",
+		"pp": 40,
+		"pp_max": 64,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "debuff",
+		"debuffStat": "atk",
+		"debuffAmount":	1
+	},
+	
+	"horn attack": {
+		"name": "Horn Attack",
+		"type": "normal",
+		"pp": 25,
+		"pp_max": 40,
+		"power": 65,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple"
+	},
+	
+	"hydro pump": {
+		"name": "Hydro Pump",
+		"type": "water",
+		"pp": 5,
+		"pp_max": 8,
+		"power": 120,
+		"accuracy": 0.80,
+		"contact": false,
+		"moveType": "simple",
+		"special": true
+	},
+	
+	"hyper voice": {
+		"name": "Hyper Voice",
+		"type": "normal",
+		"pp": 10,
+		"pp_max": 16,
+		"power": 90,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"special": true
+	},
+	
+	
+	"karate chop": {
+		"name": "Karate Chop",
+		"type": "fighting",
+		"pp": 25,
+		"pp_max": 40,
+		"power": 50,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple",
+		"highCritical": true
+	},
+	
+	"kinesis": {
+		"name": "Kinesis",
+		"type": "psychic",
+		"pp": 15,
+		"pp_max": 24,
+		"accuracy": 0.80,
+		"contact": false,
+		"moveType": "debuff",
+		"debuffStat": "accuracy",
+		"debuffAmount":	1
+	},
+
+	"leer": {
+		"name": "Leer",
+		"type": "normal",
+		"pp": 30,
+		"pp_max": 48,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "debuff",
+		"debuffStat": "def",
+		"debuffAmount":	1
+	},
+	
+	"megahorn": {
+		"name": "Megahorn",
+		"type": "bug",
+		"pp": 10,
+		"pp_max": 16,
+		"power": 120,
+		"accuracy": 0.85,
+		"contact": true,
+		"moveType": "simple"
+	},
+	
+	"mega kick": {
+		"name": "Mega Kick",
+		"type": "normal",
+		"pp": 5,
+		"pp_max": 8,
+		"power": 120,
+		"accuracy": 0.75,
+		"contact": true,
+		"moveType": "simple"
+	},
+	
+	"mega punch": {
+		"name": "Mega Punch",
+		"type": "normal",
+		"pp": 20,
+		"pp_max": 32,
+		"power": 80,
+		"accuracy": 0.85,
+		"contact": true,
+		"moveType": "simple"
+	},
+	
+	
+	"metal sound": {
+		"name": "Metal Sound",
+		"type": "steel",
+		"pp": 40,
+		"pp_max": 64,
+		"accuracy": 0.85,
+		"contact": false,
+		"moveType": "debuff",
+		"debuffStat": "spDef",
+		"debuffAmount":	2
+	},
+	
+	"peck": {
+		"name": "Peck",
+		"type": "flying",
+		"pp": 35,
+		"pp_max": 56,
+		"power": 35,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple"
+	},
+	
+	"pound": {
+		"name": "Pound",
+		"type": "normal",
+		"pp": 35,
+		"pp_max": 56,
+		"power": 40,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple"
+	},
+	
+	"razor leaf": {
+		"name": "Razor Leaf",
+		"type": "grass",
+		"pp": 25,
+		"pp_max": 40,
+		"power": 55,
+		"accuracy": 0.95,
+		"contact": false,
+		"moveType": "simple",
+		"highCritical": true
+	},
+	
+	"rock throw": {
+		"name": "Rock Throw",
+		"type": "rock",
+		"pp": 15,
+		"pp_max": 24,
+		"power": 50,
+		"accuracy": 0.90,
+		"contact": false,
+		"moveType": "simple"
+	},
+	
+	
+	"scary face": {
+		"name": "Scary Face",
+		"type": "normal",
+		"pp": 10,
+		"pp_max": 16,
+		"accuracy": 0.90,
+		"contact": false,
+		"moveType": "debuff",
+		"debuffStat": "speed",
+		"debuffAmount":	2
+	},
+
+	"scratch": {
+		"name": "Scratch",
+		"type": "normal",
+		"pp": 35,
+		"pp_max": 56,
+		"power": 40,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple"
+	},
+	
+	
+	"screech": {
+		"name": "Screech",
+		"type": "normal",
+		"pp": 40,
+		"pp_max": 64,
+		"accuracy": 0.85,
+		"contact": false,
+		"moveType": "debuff",
+		"debuffStat": "def",
+		"debuffAmount":	2
+	},
+	
+	"sky uppercut": {
+		"name": "Sky Uppercut",
+		"type": "fighting",
+		"pp": 15,
+		"pp_max": 24,
+		"power": 85,
+		"accuracy": 0.90,
+		"contact": true,
+		"moveType": "simple"
+	},
+	
+	"slam": {
+		"name": "Slam",
+		"type": "normal",
+		"pp": 20,
+		"pp_max": 32,
+		"power": 80,
+		"accuracy": 0.75,
+		"contact": true,
+		"moveType": "simple"
+	},
+	
+	"slash": {
+		"name": "Slash",
+		"type": "normal",
+		"pp": 20,
+		"pp_max": 32,
+		"power": 70,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple",
+		"highCritical": true
+	},
+	
+	"smokescreen": {
+		"name": "SmokeScreen",
+		"type": "normal",
+		"pp": 20,
+		"pp_max": 32,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "debuff",
+		"debuffStat": "accuracy",
+		"debuffAmount":	1
+	},
+	"string shot": {
+		"name": "String Shot",
+		"type": "bug",
+		"pp": 40,
+		"pp_max": 64,
+		"accuracy": 0.95,
+		"contact": false,
+		"moveType": "debuff",
+		"debuffStat": "speed",
+		"debuffAmount":	1
+	},	
+
+	"sweet scent": {
+		"name": "Sweet Scent",
+		"type": "normal",
+		"pp": 20,
+		"pp_max": 32,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "debuff",
+		"debuffStat": "speed",
+		"debuffAmount":	1
+	},
+
+	"tackle": {
+		"name": "Tackle",
+		"type": "normal",
+		"pp": 35,
+		"pp_max": 56,
+		"power": 35,
+		"accuracy": 0.95,
+		"contact": true,
+		"moveType": "simple"
+	},
+	
+	"tail whip": {
+		"name": "Tail Whip",
+		"type": "normal",
+		"pp": 30,
+		"pp_max": 48,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "debuff",
+		"debuffStat": "def",
+		"debuffAmount":	1
+	},	
+	
+	"vicegrip": {
+		"name": "ViceGrip",
+		"type": "normal",
+		"pp": 30,
+		"pp_max": 48,
+		"power": 55,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple"
+	},
+
+	"vine whip": {
+		"name": "Vine Whip",
+		"type": "grass",
+		"pp": 10,
+		"pp_max": 24,
+		"power": 35,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple"
+	},
+
+	"water gun": {
+		"name": "Water Gun",
+		"type": "water",
+		"pp": 25,
+		"pp_max": 40,
+		"power": 40,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"special": true
+	},
+	
+	"waterfall": {
+		"name": "Waterfall",
+		"type": "water",
+		"pp": 15,
+		"pp_max": 24,
+		"power": 80,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple"
+	},
+
+	"wing attack": {
+		"name": "Wing Attack",
+		"type": "flying",
+		"pp": 35,
+		"pp_max": 56,
+		"power": 60,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple"
+	},
+	
+	"lick": {
+		"name": "Lick",
+		"type": "ghost",
+		"pp": 30,
+		"pp_max": 48,
+		"power": 20,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple",
+		"applyStatusChance": 0.3,
+		"applyStatus": 3
+	},
+	
+	"blizzard": { 
+		"name": "Blizzard",
+		"type": "ice",
+		"special": true,
+		"pp": 5,
+		"pp_max": 8,
+		"power": 120,
+		"accuracy": 0.7,
+		"contact": false,		
+		"moveType": "simple",
+		"applyStatusChance": 0.1,
+		"applyStatus": 2
+	},
+	
+	"body slam": {
+		"name": "Body Slam",
+		"type": "normal",
+		"pp": 15,
+		"pp_max": 24,
+		"power": 85,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple",
+		"applyStatusChance": 0.3,
+		"applyStatus": 3
+	},
+
+	"dragonbreath": {
+		"name": "DragonBreath",
+		"type": "dragon",
+		"special": true,
+		"pp": 20,
+		"pp_max": 32,
+		"power": 60,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"applyStatusChance": 0.3,
+		"applyStatus": 3
+	},
+
+	"ember": {
+		"name": "Ember",
+		"type": "fire",
+		"special": true,
+		"pp": 25,
+		"pp_max": 40,
+		"power": 40,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"applyStatusChance": 0.1,
+		"applyStatus": 5
+	},
+
+	"fake tears": {
+		"name": "Fake Tears",
+		"type": "dark",
+		"pp": 20,
+		"pp_max": 32,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "debuff",
+		"debuffStat": "spDef",
+		"debuffAmount":	2
+	},
+
+	"fire blast": {
+		"name": "Fire Blast",
+		"type": "fire",
+		"special": true,
+		"pp": 5,
+		"pp_max": 8,
+		"power": 120,
+		"accuracy": 0.85,
+		"contact": false,
+		"moveType": "simple",
+		"applyStatusChance": 0.1,
+		"applyStatus": 5
+	},
+
+	"fire punch": {
+		"name": "Fire Punch",
+		"type": "fire",
+		"pp": 15,
+		"pp_max": 24,
+		"power": 75,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple",
+		"applyStatusChance": 0.1,
+		"applyStatus": 5
+	},
+
+	"flame wheel": {
+		"name": "Flame Wheel",
+		"type": "fire",
+		"pp": 25,
+		"pp_max": 40,
+		"power": 60,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple",
+		"applyStatusChance": 0.1,
+		"applyStatus": 5
+	},
+
+	"flamethrower": {
+		"name": "Flamethrower",
+		"type": "fire",
+		"special": true,
+		"pp": 15,
+		"pp_max": 24,
+		"power": 95,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"applyStatusChance": 0.1,
+		"applyStatus": 5
+	},
+
+	"glare": {
+		"name": "Glare",
+		"type": "normal",
+		"pp": 30,
+		"pp_max": 48,
+		"accuracy": 0.75,
+		"contact": false,
+		"moveType": "applyStatus",
+		"applyStatus": 3
+	},
+	
+	"heat wave": {
+		"name": "Heat Wave",
+		"type": "fire",
+		"special": true,
+		"pp": 10,
+		"pp_max": 16,
+		"power": 100,
+		"accuracy": 0.9,
+		"contact": false,
+		"moveType": "simple",
+		"applyStatusChance": 0.1,
+		"applyStatus": 5
+	},
+	
+	"hypnosis": {
+		"name": "Hypnosis",
+		"type": "psychic",
+		"pp": 20,
+		"pp_max": 32,
+		"accuracy": 0.6,
+		"contact": false,
+		"moveType": "applyStatus",
+		"applyStatus": 1
+	},
+
+	"ice beam": {
+		"name": "Ice Beam",
+		"type": "ice",
+		"special": true,
+		"pp": 10,
+		"pp_max": 16,
+		"power": 95,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"applyStatusChance": 0.1,
+		"applyStatus": 2
+	},
+
+	"ice punch": {
+		"name": "Ice Punch",
+		"type": "ice",
+		"pp": 15,
+		"pp_max": 24,
+		"power": 75,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple",
+		"applyStatusChance": 0.1,
+		"applyStatus": 2
+	},
+
+	"lovely kiss": {
+		"name": "Lovely Kiss",
+		"type": "normal",
+		"pp": 10,
+		"pp_max": 16,
+		"accuracy": 0.75,
+		"contact": false,
+		"moveType": "applyStatus",
+		"applyStatus": 1
+	},
+	
+	"poison fang": {
+		"name": "Poison Fang",
+		"type": "poison",
+		"pp": 15,
+		"pp_max": 24,
+		"power": 50,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple",
+		"applyStatusChance": 0.3,
+		"applyStatus": 4
+	},
+	
+	"poison gas": {
+		"name": "Poison Gas",
+		"type": "poison",
+		"pp": 40,
+		"pp_max": 64,
+		"accuracy": 0.55,
+		"contact": false,
+		"moveType": "applyStatus",
+		"applyStatus": 4
+	},
+
+	"poison sting": {
+		"name": "Poison Fang",
+		"type": "poison",
+		"pp": 35,
+		"pp_max": 56,
+		"power": 15,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"applyStatusChance": 0.3,
+		"applyStatus": 4
+	},
+	
+	"poisonpowder": {
+		"name": "PoisonPowder",
+		"type": "poison",
+		"pp": 35,
+		"pp_max": 56,
+		"accuracy": 0.75,
+		"contact": false,
+		"moveType": "applyStatus",
+		"applyStatus": 4
+	},
+
+	"powder snow": {
+		"name": "Powder Snow",
+		"type": "ice",
+		"special": true,
+		"pp": 25,
+		"pp_max": 40,
+		"power": 40,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"applyStatusChance": 0.1,
+		"applyStatus": 2
+	},
+	
+	"sing": {
+		"name": "Sing",
+		"type": "normal",
+		"pp": 15,
+		"pp_max": 24,
+		"accuracy": 0.55,
+		"contact": false,
+		"moveType": "applyStatus",
+		"applyStatus": 1
+	},		
+	
+	"sleep powder": {
+		"name": "Sleep Powder",
+		"type": "grass",
+		"pp": 15,
+		"pp_max": 24,
+		"accuracy": 0.75,
+		"contact": false,
+		"moveType": "applyStatus",
+		"applyStatus": 1
+	},
+
+	"sludge": {
+		"name": "Sludge",
+		"type": "poison",
+		"special": true,
+		"pp": 20,
+		"pp_max": 32,
+		"power": 65,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"applyStatusChance": 0.3,
+		"applyStatus": 4
+	},
+
+	"sludge bomb": {
+		"name": "Sludge Bomb",
+		"type": "poison",
+		"special": true,
+		"pp": 10,
+		"pp_max": 16,
+		"power": 90,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"applyStatusChance": 0.3,
+		"applyStatus": 4
+	},
+	
+	"smog": {
+		"name": "Smog",
+		"type": "poison",
+		"special": true,
+		"pp": 20,
+		"pp_max": 32,
+		"power": 20,
+		"accuracy": 0.7,
+		"contact": false,
+		"moveType": "simple",
+		"applyStatusChance": 0.4,
+		"applyStatus": 4
+	},
+
+	"spark": {
+		"name": "Spark",
+		"type": "electric",
+		"pp": 20,
+		"pp_max": 32,
+		"power": 65,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple",
+		"applyStatusChance": 0.3,
+		"applyStatus": 3
+	},
+
+	"spore": {
+		"name": "Spore",
+		"type": "grass",
+		"pp": 15,
+		"pp_max": 24,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "applyStatus",
+		"applyStatus": 1
+	},
+	
+	"stun spore": {
+		"name": "Stun Spore",
+		"type": "grass",
+		"pp": 30,
+		"pp_max": 48,
+		"accuracy": 0.75,
+		"contact": false,
+		"moveType": "applyStatus",
+		"applyStatus": 3
+	},
+	
+	"thunder": {
+		"name": "Thunder",
+		"type": "electric",
+		"special": true,
+		"pp": 10,
+		"pp_max": 16,
+		"power": 120,
+		"accuracy": 0.7,
+		"contact": false,
+		"moveType": "simple",
+		"applyStatusChance": 0.3,
+		"applyStatus": 3
+	},
+	
+	"thunder wave": {
+		"name": "Thunder Wave",
+		"type": "electric",
+		"pp": 20,
+		"pp_max": 32,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "applyStatus",
+		"applyStatus": 3
+	},
+
+	"thunderbolt": {
+		"name": "Thunderbolt",
+		"type": "electric",
+		"special": true,
+		"pp": 15,
+		"pp_max": 24,
+		"power": 95,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"applyStatusChance": 0.1,
+		"applyStatus": 3
+	},
+	
+	"thunderpunch": {
+		"name": "ThunderPunch",
+		"type": "electric",
+		"pp": 15,
+		"pp_max": 24,
+		"power": 75,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple",
+		"applyStatusChance": 0.1,
+		"applyStatus": 3
+	},
+	
+	"thundershock": {
+		"name": "ThunderShock",
+		"type": "electric",
+		"pp": 30,
+		"pp_max": 48,
+		"power": 40,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"applyStatusChance": 0.1,
+		"applyStatus": 3
+	},
+	
+	"zap cannon": {
+		"name": "Zap Cannon",
+		"type": "electric",
+		"special": true,
+		"pp": 5,
+		"pp_max": 8,
+		"power": 100,
+		"accuracy": 0.5,
+		"contact": false,
+		"moveType": "simple",
+		"applyStatusChance": 1,
+		"applyStatus": 3
+	},
+	
+	"acid": { 
+		"name": "Acid",
+		"type": "poison",
+		"special": true,
+		"pp": 30,
+		"pp_max": 48,
+		"power": 40,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"debuffChance": 0.1,
+		"debuffStat": "def",
+		"debuffAmount":	1
+	},
+
+	"astonish": {
+		"name": "Astonish",
+		"type": "ghost",
+		"pp": 15,
+		"pp_max": 24,
+		"power": 30,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple",
+		"flinchChance": 0.3
+	},
+
+	"aurora beam": { 
+		"name": "Aurora Beam",
+		"type": "ice",
+		"special": true,
+		"pp": 20,
+		"pp_max": 32,
+		"power": 65,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"debuffChance": 0.1,
+		"debuffStat": "atk",
+		"debuffAmount":	1
+	},
+
+	"bite": { 
+		"name": "Bite",
+		"type": "dark",
+		"special": true,
+		"pp": 25,
+		"pp_max": 40,
+		"power": 60,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple",
+		"flinchChance": 0.3
+	},
+	
+	"bone club": { 
+		"name": "Bone Club",
+		"type": "ground",
+		"pp": 20,
+		"pp_max": 32,
+		"power": 65,
+		"accuracy": 0.85,
+		"contact": false,
+		"moveType": "simple",
+		"flinchChance": 0.1
+	},	
+
+	"bubble": { 
+		"name": "Bubble",
+		"type": "water",
+		"special": true,
+		"pp": 30,
+		"pp_max": 48,
+		"power": 20,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"debuffChance": 0.1,
+		"debuffStat": "speed",
+		"debuffAmount":	1
+	},
+
+		"bubblebeam": { 
+		"name": "BubbleBeam",
+		"type": "water",
+		"special": true,
+		"pp": 20,
+		"pp_max": 32,
+		"power": 65,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"debuffChance": 0.1,
+		"debuffStat": "speed",
+		"debuffAmount":	1
+	},
+
+	"constrict": { 
+		"name": "Constrict",
+		"type": "normal",
+		"pp": 35,
+		"pp_max": 56,
+		"power": 10,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple",
+		"debuffChance": 0.1,
+		"debuffStat": "speed",
+		"debuffAmount":	1
+	},
+	
+	"crunch": { 
+		"name": "Crunch",
+		"type": "dark",
+		"pp": 15,
+		"pp_max": 24,
+		"power": 80,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple",
+		"debuffChance": 0.2,
+		"debuffStat": "spDef",
+		"debuffAmount":	1
+	},
+	
+	"dragon claw": {
+		"name": "Dragon Claw",
+		"type": "dragon",
+		"pp": 15,
+		"pp_max": 24,
+		"power": 80,
+		"accuracy": 1.0,
+		"contact": true,
+		"type": "simple"
+	},
+
+	"headbutt": { 
+		"name": "Headbutt",
+		"type": "normal",
+		"pp": 15,
+		"pp_max": 24,
+		"power": 70,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple",
+		"flinchChance": 0.3
+	},
+
+	"hyper fang": { 
+		"name": "Hyper Fang",
+		"type": "normal",
+		"pp": 15,
+		"pp_max": 24,
+		"power": 80,
+		"accuracy": 0.9,
+		"contact": true,
+		"moveType": "simple",
+		"flinchChance": 0.1
+	},
+
+	"icy wind": { 
+		"name": "Icy Wind",
+		"type": "ice",
+		"special": true,
+		"pp": 15,
+		"pp_max": 24,
+		"power": 55,
+		"accuracy": 0.95,
+		"contact": false,
+		"moveType": "simple",
+		"debuffChance": 1.0,
+		"debuffStat": "speed",
+		"debuffAmount":	1
+	},	
+
+	"iron tail": { 
+		"name": "Iron Tail",
+		"type": "steel",
+		"pp": 15,
+		"pp_max": 24,
+		"power": 100,
+		"accuracy": 0.75,
+		"contact": true,
+		"moveType": "simple",
+		"debuffChance": 0.1,
+		"debuffStat": "def",
+		"debuffAmount":	1
+	},	
+
+	"mud shot": { 
+		"name": "Mud Shot",
+		"type": "ground",
+		"special": true,
+		"pp": 15,
+		"pp_max": 24,
+		"power": 55,
+		"accuracy": 0.95,
+		"contact": false,
+		"moveType": "simple",
+		"debuffChance": 1.0,
+		"debuffStat": "speed",
+		"debuffAmount":	1
+	},	
+
+	"psychic": { 
+		"name": "Psychic",
+		"type": "psychic",
+		"special": true,
+		"pp": 10,
+		"pp_max": 16,
+		"power": 90,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"debuffChance": 0.1,
+		"debuffStat": "spDef",
+		"debuffAmount":	1
+	},	
+
+	"rock tomb": { 
+		"name": "Rock Tomb",
+		"type": "rock",
+		"pp": 10,
+		"pp_max": 16,
+		"power": 50,
+		"accuracy": 0.8,
+		"contact": false,
+		"moveType": "simple",
+		"debuffChance": 1.0,
+		"debuffStat": "speed",
+		"debuffAmount":	1
+	},
+
+	"rolling kick": { 
+		"name": "Rolling Kick",
+		"type": "fighting",
+		"pp": 15,
+		"pp_max": 24,
+		"power": 60,
+		"accuracy": 0.85,
+		"contact": true,
+		"moveType": "simple",
+		"flinchChance": 0.3
+	},
+
+	"shadow ball": { 
+		"name": "Shadow Ball",
+		"type": "ghost",
+		"special": true,
+		"pp": 15,
+		"pp_max": 24,
+		"power": 80,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"debuffChance": 0.2,
+		"debuffStat": "spDef",
+		"debuffAmount":	1
+	},	
+
+	"snore": { 
+		"name": "Snore",
+		"type": "normal",
+		"special": true,
+		"pp": 15,
+		"pp_max": 24,
+		"power": 40,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"flinchChance": 0.3
+	},
+
+	"stomp": { 
+		"name": "Stomp",
+		"type": "normal",
+		"pp": 20,
+		"pp_max": 32,
+		"power": 65,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple",
+		"flinchChance": 0.3
+	},
+	
+	"acid armor": { 
+		"name": "Acid Armor",
+		"type": "poison",
+		"pp": 40,
+		"pp_max": 64,
+		"accuracy": -1,
+		"contact": false,
+		"moveType": "buff",
+		"buffUserStat": "def",
+		"buffUserAmount":	2
+	},
+
+	"aerial ace": { 
+		"name": "Aerial Ace",
+		"type": "flying",
+		"pp": 20,
+		"pp_max": 32,
+		"power": 60,
+		"accuracy": -1,
+		"contact": true,
+		"moveType": "simple"
+	},
+
+	"agility": { 
+		"name": "Agility",
+		"type": "psychic",
+		"pp": 30,
+		"pp_max": 48,
+		"accuracy": -1,
+		"contact": false,
+		"moveType": "buff",
+		"buffUserStat": "speed",
+		"buffUserAmount":	2
+	},
+
+	"amensia": { 
+		"name": "Amnesia",
+		"type": "psychic",
+		"pp": 20,
+		"pp_max": 32,
+		"accuracy": -1,
+		"contact": false,
+		"moveType": "buff",
+		"buffUserStat": "spDef",
+		"buffUserAmount":	2
+	},
+
+	"ancientpower": { 
+		"name": "AncientPower",
+		"type": "rock",
+		"special": true,
+		"pp": 5,
+		"pp_max": 8,
+		"power": 60,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"buffPlayerChance": 0.1,
+		"buffUserStat": "atk,def,spAtk,spDef,speed",
+		"buffUserAmount":	1
+	},
+
+	"barrier": { 
+		"name": "Barrier",
+		"type": "psychic",
+		"pp": 30,
+		"pp_max": 48,
+		"accuracy": -1,
+		"contact": false,
+		"moveType": "buff",
+		"buffUserStat": "def",
+		"buffUserAmount":	2
+	},
+
+	"bulk up": { 
+		"name": "Bulk Up",
+		"type": "fighting",
+		"pp": 20,
+		"pp_max": 32,
+		"accuracy": -1,
+		"contact": false,
+		"moveType": "buff",
+		"buffUserStat": "atk,def",
+		"buffUserAmount":	1
+	},
+
+	"calm mind": { 
+		"name": "Calm Mind",
+		"type": "psychic",
+		"pp": 20,
+		"pp_max": 32,
+		"accuracy": -1,
+		"contact": false,
+		"moveType": "buff",
+		"buffUserStat": "spAtk,spDef",
+		"buffUserAmount":	1
+	},
+
+	"confuse ray": { 
+		"name": "Confuse Ray",
+		"type": "ghost",
+		"pp": 10,
+		"pp_max": 16,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"confusionChance": 1.0
+	},
+
+	"confusion": { 
+		"name": "Confusion",
+		"type": "psychic",
+		"special": true,
+		"pp": 25,
+		"pp_max": 40,
+		"power": 50,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"confusionChance": 0.1
+	},
+
+	"cosmic power": { 
+		"name": "Cosmic Power",
+		"type": "psychic",
+		"pp": 20,
+		"pp_max": 32,
+		"accuracy": -1,
+		"contact": false,
+		"moveType": "buff",
+		"buffUserStat": "def,spDef",
+		"buffUserAmount":	1
+	},
+
+	"defense curl": { 
+		"name": "Defense Curl",
+		"type": "normal",
+		"pp": 40,
+		"pp_max": 64,
+		"accuracy": -1,
+		"contact": false,
+		"moveType": "buff",
+		"buffUserStat": "def",
+		"buffUserAmount":	1
+	},
+
+	"dizzy punch": { 
+		"name": "Dizzy Punch",
+		"type": "normal",
+		"pp": 10,
+		"pp_max": 16,
+		"power": 70,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple",
+		"confusionChance": 0.2
+	},
+
+	"double team": { 
+		"name": "Double Team",
+		"type": "normal",
+		"pp": 15,
+		"pp_max": 24,
+		"accuracy": -1,
+		"contact": false,
+		"moveType": "buff",
+		"buffUserStat": "evasion",
+		"buffUserAmount":	1
+	},
+
+	"dragon dance": { 
+		"name": "Dragon Dance",
+		"type": "dragon",
+		"pp": 20,
+		"pp_max": 32,
+		"accuracy": -1,
+		"contact": false,
+		"moveType": "buff",
+		"buffUserStat": "atk,speed",
+		"buffUserAmount":	1
+	},
+
+	"dynamicpunch": { 
+		"name": "DynamicPunch",
+		"type": "fighting",
+		"pp": 5,
+		"pp_max": 8,
+		"power": 100,
+		"accuracy": 0.5,
+		"contact": true,
+		"moveType": "simple",
+		"confusionChance": 1.0
+	},
+
+
+	"earthquake": { 
+		"name": "Earthquake",
+		"type": "ground",
+		"pp": 10,
+		"pp_max": 16,
+		"power": 100,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple"
+	},
+	
+	"Faint Attack": { 
+		"name": "Faint Attack",
+		"type": "dark",
+		"pp": 20,
+		"pp_max": 32,
+		"power": 60,
+		"accuracy": -1,
+		"contact": true,
+		"moveType": "simple"
+	},
+	
+	"growth": { 
+		"name": "Growth",
+		"type": "normal",
+		"pp": 40,
+		"pp_max": 64,
+		"accuracy": -1,
+		"contact": false,
+		"moveType": "buff",
+		"buffUserStat": "spAtk",
+		"buffUserAmount":	1
+	},	
+
+	"gust": { 
+		"name": "Gust",
+		"type": "flying",
+		"special": true,
+		"pp": 35,
+		"pp_max": 56,
+		"power": 40,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple"
+	},
+
+	"harden": { 
+		"name": "Harden",
+		"type": "normal",
+		"pp": 30,
+		"pp_max": 48,
+		"accuracy": -1,
+		"contact": false,
+		"moveType": "buff",
+		"buffUserStat": "def",
+		"buffUserAmount":	1
+	},	
+
+	"low kick": {
+		"name": "Low Kick",
+		"type": "fighting",
+		"special": true,
+		"pp": 20,
+		"pp_max": 32,
+		"power": 50,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple",
+		"flinchChance": 0.3
+	},
+
+	"magical leaf": { 
+		"name": "Magical Leaf",
+		"type": "grass",
+		"special": true,
+		"pp": 20,
+		"pp_max": 32,
+		"power": 60,
+		"accuracy": -1,
+		"contact": false,
+		"moveType": "simple"
+	},
+
+	"meditate": { 
+		"name": "Meditate",
+		"type": "normal",
+		"pp": 40,
+		"pp_max": 64,
+		"accuracy": -1,
+		"contact": false,
+		"moveType": "buff",
+		"buffUserStat": "atk",
+		"buffUserAmount":	1
+	},
+
+	"metal claw": { 
+		"name": "Metal Claw",
+		"type": "steel",
+		"pp": 35,
+		"pp_max": 56,
+		"power": 50,
+		"accuracy": 0.95,
+		"contact": true,
+		"moveType": "simple",
+		"buffPlayerChance": 0.1,
+		"buffUserStat": "atk",
+		"buffUserAmount":	1
+	},
+
+	"meteor mash": { 
+		"name": "Meteor Mash",
+		"type": "steel",
+		"pp": 10,
+		"pp_max": 16,
+		"power": 100,
+		"accuracy": 0.85,
+		"contact": true,
+		"moveType": "simple",
+		"buffPlayerChance": 0.2,
+		"buffUserStat": "atk",
+		"buffUserAmount":	1
+	},
+
+	"minimize": { 
+		"name": "Minimize",
+		"type": "normal",
+		"pp": 20,
+		"pp_max": 32,
+		"accuracy": -1,
+		"contact": false,
+		"moveType": "buff",
+		"buffUserStat": "evasion",
+		"buffUserAmount":	1
+	},
+
+	"overheat": {
+		"name": "Overheat",
+		"type": "fire",
+		"special": true,
+		"pp": 5,
+		"pp_max": 8,
+		"power": 140,
+		"accuracy": 0.9,
+		"contact": false,
+		"moveType": "simple",
+		"debuffUserStat": "spAtk",
+		"debuffUserAmount": 2
+	},
+
+	"psybeam": { 
+		"name": "Psybeam",
+		"type": "psychic",
+		"special": true,
+		"pp": 20,
+		"pp_max": 32,
+		"power": 65,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"confusionChance": 0.1
+	},	
+	
+	"shadow punch": { 
+		"name": "Shadow Punch",
+		"type": "ghost",
+		"pp": 20,
+		"pp_max": 32,
+		"power": 60,
+		"accuracy": -1,
+		"contact": true,
+		"moveType": "simple"
+	},
+
+	"sharpen": { 
+		"name": "Sharpen",
+		"type": "normal",
+		"pp": 30,
+		"pp_max": 48,
+		"accuracy": -1,
+		"contact": false,
+		"moveType": "buff",
+		"buffUserStat": "atk",
+		"buffUserAmount":	1
+	},
+
+	"shock wave": { 
+		"name": "Shock Wave",
+		"type": "electric",
+		"special": true,
+		"pp": 20,
+		"pp_max": 32,
+		"power": 60,
+		"accuracy": -1,
+		"contact": false,
+		"moveType": "simple"
+	},	
+
+	"signal beam": { 
+		"name": "Signal Beam",
+		"type": "bug",
+		"special": true,
+		"pp": 15,
+		"pp_max": 24,
+		"power": 75,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"confusionChance": 0.1
+	},
+
+	"silver wind": { 
+		"name": "Silver Wind",
+		"type": "bug",
+		"pp": 5,
+		"pp_max": 8,
+		"power": 60,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"buffPlayerChance": 0.1,
+		"buffUserStat": "atk,def,spAtk,spDef,speed",
+		"buffUserAmount":	1
+	},
+
+	"steel wing": { 
+		"name": "Steel Wing",
+		"type": "steel",
+		"pp": 25,
+		"pp_max": 40,
+		"power": 70,
+		"accuracy": 0.1,
+		"contact": true,
+		"moveType": "simple",
+		"buffPlayerChance": 0.1,
+		"buffUserStat": "def",
+		"buffUserAmount":	1
+	},	
+
+	"superpower": {
+		"name": "Superpower",
+		"type": "fighting",
+		"pp": 5,
+		"pp_max": 8,
+		"power": 120,
+		"accuracy": 1.0,
+		"contact": true,
+		"moveType": "simple",
+		"debuffUserStat": "atk,def",
+		"debuffUserAmount": 1
+	},
+
+	"swift": { 
+		"name": "Swift",
+		"type": "normal",
+		"special": true,
+		"pp": 20,
+		"pp_max": 32,
+		"power": 60,
+		"accuracy": -1,
+		"contact": false,
+		"moveType": "simple"
+	},
+
+	"swords dance": { 
+		"name": "Swords Dance",
+		"type": "normal",
+		"pp": 30,
+		"pp_max": 48,
+		"accuracy": -1,
+		"contact": false,
+		"moveType": "buff",
+		"buffUserStat": "atk",
+		"buffUserAmount":	2
+	},	
+
+	"tickle": {
+		"name": "Tickle",
+		"type": "normal",
+		"pp": 20,
+		"pp_max": 32,
+		"accuracy": 1.0,
+		"contact": false,
+		"type": "debuff",
+		"debuffStat": "atk,def",
+		"debuffAmount":	1
+	},	
+
+	"twister": {
+		"name": "Twister",
+		"type": "dragon",
+		"special": true,
+		"pp": 20,
+		"pp_max": 32,
+		"power": 40,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"flinchChance": 0.2
+	},
+
+	"water pulse": { 
+		"name": "Water Pulse",
+		"type": "water",
+		"special": true,
+		"pp": 20,
+		"pp_max": 32,
+		"power": 60,
+		"accuracy": 1.0,
+		"contact": false,
+		"moveType": "simple",
+		"confusionChance": 0.2
+	},
+	
+	"withdraw": { 
+		"name": "Withdraw",
+		"type": "water",
+		"pp": 40,
+		"pp_max": 65,
+		"accuracy": -1,
+		"contact": false,
+		"moveType": "buff",
+		"buffUserStat": "def",
+		"buffUserAmount":	1
+	}
+}
