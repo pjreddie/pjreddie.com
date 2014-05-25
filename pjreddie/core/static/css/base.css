@@ -1,10 +1,10 @@
 html, body{
-	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family:'Roboto',Arial,sans-serif;
 	font-size:20px;
 	margin:0;
 	padding:0;
 	background-color:transparent;
-	font-weight:300;
+	font-weight:100;
 }
 pre{
     padding:1em;
@@ -19,7 +19,6 @@ a{
 }
 
 p{
-	font-weight:100;
 	letter-spacing:1px;
 }
 
@@ -46,9 +45,13 @@ html{
 	margin:2em 3.5em;
 }
 
+pre{
+	font-family: 'Ubuntu Mono', monospace;
+}
+
 .header{
 	color:#0f0;
-	font-family: Monaco, "Lucida Console", monospace;
+	font-family: 'Ubuntu Mono', monospace;
 	font-size:4em;
 	margin-bottom:.25em;
 	text-align:right;
@@ -76,7 +79,7 @@ h4{
 }
 
 ul.nav{
-	font-family: Monaco, "Lucida Console", monospace;
+	font-family: 'Ubuntu Mono', monospace;
 	list-style-type:none;
 	margin:0;
     margin-left:3.5em;
@@ -126,7 +129,7 @@ blockquote{
     margin-top:40px;
     padding:0px 20px;
     border-left:3px #0ff solid;
-    font-family:georgia;
+    font-family: 'Droid Serif', serif;
 }
 footer{
     margin-left:40px;
