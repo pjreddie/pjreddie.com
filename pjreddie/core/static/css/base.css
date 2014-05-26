@@ -11,8 +11,10 @@ pre{
     background-color:#205;
 }
 code{
+	font-family: 'Ubuntu Mono', monospace;
     color:#0f0;
 }
+
 a{
 	text-decoration:none;
 	color: inherit;
@@ -43,10 +45,6 @@ html{
 
 .main{
 	margin:2em 3.5em;
-}
-
-pre{
-	font-family: 'Ubuntu Mono', monospace;
 }
 
 .header{
