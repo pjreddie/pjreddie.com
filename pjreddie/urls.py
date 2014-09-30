@@ -21,6 +21,7 @@ urlpatterns = patterns('',
 	url(r'^blog/$', 'pjreddie.core.views.blog', name='blog'),
 	url(r'^resume/$', redirect_to, {'url':'/static/Redmon Resume.pdf'}),
     url(r'^pokemon-heart/$', direct_to_template, { 'template': 'pokemon.html'}),
+    url(r'^products/$', direct_to_template, { 'template': 'products.html'}),
 	# Uncomment the admin/doc line below to enable admin documentation:
 	# url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 

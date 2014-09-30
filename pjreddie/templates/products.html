@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block head %}
+    <meta name="description" content="Here are cool Amazon products I like.">
+{% endblock %}
+
+{% block header %}
+<h1 class="header">Products</h1>
+{% endblock %}
+
+{% block body %}
+
+<div class="container main">
+<h1>Cool Products!</h1>
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=survstraforth-20&marketplace=amazon&region=US&placement=B003JMXHU6&asins=B003JMXHU6&linkId=7EIPH4YJ3F62SZ5E&show_border=true&link_opens_in_new_window=true">
+</iframe>
+{% endblock %}
