@@ -1,6 +1,4 @@
 from django.db import models
-
-from django.db import models
 from django.conf import settings
 from django.template.defaultfilters import slugify
 from pjreddie.utils import markdown_to_html
