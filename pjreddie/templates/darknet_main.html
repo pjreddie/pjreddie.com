@@ -1,0 +1,14 @@
+{% extends 'darknet.html' %}
+            {% block center %}
+            <h1>The Arcane Secrets of Neural Networks</h1>
+                    {% for post in posts %}
+                        <a href="{% url post post.slug %}">
+                            <div class=post>
+                            <h3>{{ post.title }}<span class=date>{{ post.date }}</span></h3>
+                                {% if post.description %}
+                                    <p>{{ post.description|linebreaks }}</p>
+                                {% endif %}
+                            </div>
+                        </a>
+                    {% endfor %}
+            {% endblock %}

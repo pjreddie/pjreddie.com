@@ -138,6 +138,7 @@ INSTALLED_APPS = (
 	'pjreddie.core',
     'projects',
     'papers',
+    'darknet',
     'django.contrib.admin',
 	'south',
     # Uncomment the next line to enable admin documentation:

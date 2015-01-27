@@ -1,0 +1,10 @@
+{% extends 'darknet.html' %}
+	{% block head %}
+		<link rel='stylesheet' media='screen' href='{{ STATIC_URL }}css/darknet.css' />
+        <meta name="description" content="{{ post.description }}">
+	{% endblock %}
+	{% block title %}{{ post.title }}{% endblock %}
+            {% block center %}
+            <h1>{{ post.title }}</h1>
+		    {{ post.html|safe }}
+            {% endblock %}

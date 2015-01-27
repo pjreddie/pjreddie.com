@@ -5,5 +5,11 @@
     text-align:center;
 }
 #external img{
-    max-height:120px;
+    max-height:60px;
+}
+.top .bar.blue{
+display:block;
+}
+.top .bar.green{
+display:block;
 }

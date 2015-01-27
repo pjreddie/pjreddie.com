@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+	{% block head %}
+		<link rel='stylesheet' media='screen' href='{{ STATIC_URL }}css/darknet.css' />
+        <meta name="description" content="These are the projects I'm currently working on or have worked on in the past.">
+	{% endblock %}
+	{% block favicon %}
+	<link rel='icon' type='image/png' href='{{ STATIC_URL }}dnfav.png' />
+	{% endblock %}
+	{% block title %}Darknet{% endblock %}
+	{% block body %}
+    <div class=break></div>
+	<div class=outside>
+        <div class="center">
+            <p id=dnlogo>
+            <img  src="{{ STATIC_URL }}img/darknet.png"></img>
+            </p>
+            {% block center %}
+            {% endblock %}
+        </div>
+        <div class="left"><div class=first><img  src="{{ STATIC_URL }}img/vines-top.png"></img></div><div class=rest></div></div>
+        <div class="right"><div class=first><img  src="{{ STATIC_URL }}img/vines-top.png"></img></div><div class=rest></div></div>
+    </div>
+    {% endblock %}

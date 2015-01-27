@@ -8,7 +8,9 @@
         <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Roboto:300,300italic,100italic,100' rel='stylesheet' type='text/css'>
+		{% block favicon %}
 		<link rel='icon' type='image/png' href='{{ STATIC_URL }}icon.png' />
+		{% endblock %}
 		{% block head %}
 		{% endblock %}
 		<script type="text/javascript">
@@ -31,13 +33,16 @@
 			{% block header %}{% endblock %}
 			<div class='green bar'></div>
 			<div class='blue bar'></div>
+            <div class=main>
 			<ul class="nav">
 				<li><a href="/">home</a></li>
 				<li><a href="/projects/">projects</a></li>
 				<li><a href="/publications/">publication</a></li>
+				{% comment %}<li class=relative><a href="/darknet/"><img id=dncircle src="{{ STATIC_URL }}img/darknet_notext.png"></img>darknet</a></li>{% comment %}
 				{% comment %}<li><a href="/reading_list/">reading list</a></li>{% endcomment %}
 				<li><a href="/resume/">résumé</a></li>
 			</ul>
+            </div>
 			<div class=break></div>
 		</div>
 		{% block body %}

@@ -19,9 +19,9 @@
 	border-left:.5em solid #0ff;
 	padding-left:1.5em;
 }
-.main{
-	margin:2em 1.5em;
-}
 .main .title{
-	margin:0 2em;
+    padding: 0em 2em;
+}
+.main{
+    max-width:54em;
 }
