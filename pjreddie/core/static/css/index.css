@@ -7,9 +7,12 @@
 #external img{
     max-height:60px;
 }
+#ponies img{
+    max-height:90px;
+}
 .top .bar.blue{
-display:block;
+    display:block;
 }
 .top .bar.green{
-display:block;
+    display:block;
 }
