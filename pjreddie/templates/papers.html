@@ -3,11 +3,11 @@
 		<link rel='stylesheet' media='screen' href='{{ STATIC_URL }}css/papers.css' />
         <meta name="description" content="My publications.">
 	{% endblock %}
-	{% block title %}Publication{% endblock %}
+	{% block title %}Publications{% endblock %}
 	{% block body %}
 		<div class=main>
 			<div class=title>
-			<h1>Publication <span class=small>(hopefully more to come...)</span></h1>
+			<h1>Publications</h1>
 			</div>
                     {% for paper in papers %}
                         {% include "paper.html" %}
