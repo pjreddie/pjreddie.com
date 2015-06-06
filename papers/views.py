@@ -5,5 +5,5 @@ from papers.models import Paper
 from django.forms import ModelForm
 
 def papers(request):
-    p = Paper.objects.all()
+    p = Paper.objects.all().order_by('-date')
     return render(request, 'papers.html', {'papers':p})
