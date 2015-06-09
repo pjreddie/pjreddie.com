@@ -1,16 +1,21 @@
 <div class=paper>
-        <h3>{{ paper.title }}</h3>
+        <h4>{{ paper.title }}</h4>
         {% if paper.pdf %}
             <a class=button href="{{ paper.pdf.url }}">PDF</a>
         {% endif %}
         {% if paper.arxiv %}
             <a class=button href="{{ paper.arxiv }}">arXiv</a>
         {% endif %}
-    <div class=break></div>
         {% if paper.authors %}
         <p class=byline>{{ paper.authors }}</p>
         {% endif %}
+        {% if paper.description %}
+        <p class="code desc">{{ paper.description }}</p>
+        {% endif %}
+    <div class=break></div>
+    {% comment %}
     {% if paper.abstract %}
         <p>{{ paper.abstract }}</p>
     {% endif %}
+    {% endcomment %}
 </div>

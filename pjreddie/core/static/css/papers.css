@@ -4,7 +4,7 @@ p{
 .button{
     float: right;
     border:2px solid #0cc;
-    padding:6px;
+    padding:.2em;
     color: #0cc;
 /*  
     font-size:12px;
@@ -17,17 +17,22 @@ p{
     border:2px solid #0ff;
 }
 .byline{
-    margin-top:0;
+    margin:0em;
 	font-size:.75em;
     font-style:italic;
     font-family: 'Droid Serif', serif;
+}
+.desc{
+    margin:0em;
+    color:#bff;
 }
 
 .small{
 	font-size:.25em;
 }
-
-.paper h3{
-    float: left;
+.paper{
+    margin-top:1em;
+}
+.paper h4{
     margin:0;
 }
