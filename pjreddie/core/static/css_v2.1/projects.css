@@ -19,9 +19,9 @@
 	border-left:.5em solid #0ff;
 	padding-left:1.5em;
 }
-.main .title{
+.projects .title{
     padding: 0em 2em;
 }
-.main{
+.projects{
     max-width:39em;
 }
