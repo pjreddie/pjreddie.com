@@ -4,7 +4,14 @@
 		<title>{% block title %}Joseph Redmon - Survival Strategies for the Robot Rebellion{% endblock %}</title>
         <meta name="author" content="Joseph Redmon">
                 <meta name="msvalidate.01" content="305CD82AE65FC4C9597F80416C1271B7" />
-		<link rel='stylesheet' media='screen' href='{{ STATIC_URL }}css/base.css' />
+		<link rel='stylesheet' media='screen' href='{{ STATIC_URL }}css_v2/base.css' />
+		<link rel='stylesheet' media='screen' href='{{ STATIC_URL }}css_v2/darknet.css' />
+		<link rel='stylesheet' media='screen' href='{{ STATIC_URL }}css_v2/darknet.css' />
+	<link rel='stylesheet' media='screen' href='{{ STATIC_URL }}css_v2/index.css' />
+		<link rel='stylesheet' media='screen' href='{{ STATIC_URL }}css_v2/papers.css' />
+		<link rel='stylesheet' media='screen' href='{{ STATIC_URL }}css_v2/project.css' />
+
+
         <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Roboto:300,300italic,100italic,100' rel='stylesheet' type='text/css'>
@@ -30,9 +37,6 @@
 
 	<body>
 		<div class=top>
-			{% block header %}{% endblock %}
-			<div class='green bar'></div>
-			<div class='blue bar'></div>
             <div class=main>
 			<ul class="nav">
 				<li><a href="/">home</a></li>
@@ -43,6 +47,8 @@
 				<li><a href="/resume/">résumé</a></li>
 			</ul>
             </div>
+			<div class=break></div>
+			{% block header %}{% endblock %}
 			<div class=break></div>
 		</div>
 		{% block body %}

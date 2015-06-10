@@ -55,6 +55,7 @@ html, body{
     margin-left:2em;
 }
 .post{
+    position: relative;
 	margin:1em auto;
     padding:.25em 1em;
     border:.25em solid #0ff;
@@ -67,9 +68,9 @@ html, body{
 	margin-bottom:.5em;
     margin-top:.5em;
 }
-.main{
-	margin:2em 1.5em;
-}
-.main .title{
-	margin:0 2em;
+.post .logo {
+    position:absolute;
+    width:8em;
+    right:-2em;
+    top:-2em;
 }

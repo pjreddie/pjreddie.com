@@ -8,11 +8,8 @@ html, body{
 	font-weight:300;
 }
 .dntext{
-    width:6em;
-    margin-left:-.6em;
-    margin-bottom:-1.2em;
-    margin-top:-2em;
-    margin-right:-.5em;
+    width:4em;
+    margin-bottom:-.5em;
 }
 pre{
     padding:1em;
@@ -76,6 +73,7 @@ html{
 	font-family: 'Ubuntu Mono', monospace;
 	font-size:4em;
 	margin-bottom:.25em;
+    margin-top:0em;
 	text-align:right;
 	font-weight:normal;
 	border:none;

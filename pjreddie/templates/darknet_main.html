@@ -1,9 +1,20 @@
-{% extends 'darknet.html' %}
-            {% block center %}
+{% extends 'base.html' %}
+	{% block head %}
+        <meta name="description" content="Darknet: Neural Networks in C.">
+	{% endblock %}
+	{% block title %}Darknet{% endblock %}
+            {% block body %}
+		<div class=main>
+                <p id=dnlogo>
+                <img  src="{{ STATIC_URL }}img/darknet.png"></img>
+                </p>
                     <p><img class=dntext src="{{ STATIC_URL }}img/darknet-text.png"></img> is an open source neural network framework written in C and CUDA. It is fast, easy to install, and supports CPU and GPU computation. You can find the source on <a href="https://github.com/pjreddie/darknet">GitHub</a> or you can read more about what <img class=dntext src="{{ STATIC_URL }}img/darknet-text.png"></img> can do right here:</p>
                     {% for post in posts %}
                         <a href="{% url post post.slug %}">
                             <div class=post>
+                            {% if post.logo %}
+                                <img class=logo src="{{ post.logo.url }}"></img>
+                            {% endif %}
                             <h3>{{ post.title }}</h3>
                                 {% if post.description %}
                                     <p>{{ post.description|linebreaks }}</p>
@@ -11,4 +22,5 @@
                             </div>
                         </a>
                     {% endfor %}
+                </div>
             {% endblock %}
