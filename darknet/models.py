@@ -7,6 +7,7 @@ class Post( models.Model ):
     title = models.CharField( max_length=100 )
     description = models.TextField(null=True, blank=True)
     body = models.TextField()
+    order = models.IntegerField(blank=True, null=True)
     date = models.DateTimeField(auto_now_add=True)
     slug = models.SlugField(blank=True, null=True)
     logo = models.ImageField( upload_to="image", null=True, blank=True )

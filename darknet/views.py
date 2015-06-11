@@ -6,5 +6,5 @@ def post(request, slug):
 	return render(request, 'darknet_post.html', {'post':p})
 
 def posts(request):
-	p = Post.objects.all().order_by('-date')
+	p = Post.objects.all().order_by('order')
 	return render(request, 'darknet_main.html', {'posts':p})
