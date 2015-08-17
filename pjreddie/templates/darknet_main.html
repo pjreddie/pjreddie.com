@@ -1,14 +1,14 @@
 {% extends 'base.html' %}
 	{% block head %}
-        <meta name="description" content="Darknet: Neural Networks in C.">
+        <meta name="description" content="Darknet: Open Source Neural Networks in C.">
 	{% endblock %}
-	{% block title %}Darknet{% endblock %}
+	{% block title %}Darknet: Open Source Neural Networks in C{% endblock %}
             {% block body %}
 		<div class="main">
                 <p id=dnlogo>
                 <img  src="{{ STATIC_URL }}img/darknet.png"></img>
                 </p>
-                    <p><img class=dntext src="{{ STATIC_URL }}img/darknet-text.png"></img> is an open source neural network framework written in C and CUDA. It is fast, easy to install, and supports CPU and GPU computation. You can find the source on <a href="https://github.com/pjreddie/darknet">GitHub</a> or you can read more about what <img class=dntext src="{{ STATIC_URL }}img/darknet-text.png"></img> can do right here:</p>
+                    <p>Darknet is an open source neural network framework written in C and CUDA. It is fast, easy to install, and supports CPU and GPU computation. You can find the source on <a href="https://github.com/pjreddie/darknet">GitHub</a> or you can read more about what Darknet can do right here:</p>
                     {% for post in posts %}
                         <a href="{% url post post.slug %}">
                             <div class=post>
@@ -25,7 +25,7 @@
 
                     <h2>Contact</h2>
                     <p>
-                    For questions or help with <img class=dntext src="{{ STATIC_URL }}img/darknet-text.png"></img> please contact the <a href="https://groups.google.com/forum/#!forum/darknet">Darknet mailing list</a>. I will respond to questions as soon as possible!
+                    For questions or help with Darknet please contact the <a href="https://groups.google.com/forum/#!forum/darknet">Darknet mailing list</a>. I will respond to questions as soon as possible!
                     </p>
                 </div>
             {% endblock %}
