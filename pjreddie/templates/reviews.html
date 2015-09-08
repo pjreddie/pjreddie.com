@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+	{% block title %}{{ paper.title }} - Reviews{% endblock %}
+	{% block body %}
+		<div class=main>
+            <h2>{{ paper.title }}</h2>
+            {% if paper.pdf %}
+                <a class=button href="{{ paper.pdf.url }}">PDF</a>
+            {% endif %}
+            {% if paper.arxiv %}
+                <a class=button href="{{ paper.arxiv }}">arXiv</a>
+            {% endif %}
+            {% if paper.authors %}
+            <p class=byline>{{ paper.authors }}</p>
+            {% endif %}
+            {% if paper.description %}
+            <p class="code desc">{{ paper.description }}</p>
+            {% endif %}
+            <div class=break></div>
+            <div class="markdown">
+                {{ paper.html|safe }}
+            </div>
+        </div>
+{% endblock %}

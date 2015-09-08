@@ -6,10 +6,10 @@
 	{% block body %}
 		<div class=main>
 			<div class=title>
-			<h1>Publications</h1>
+                <h1>Publications</h1>
 			</div>
-                    {% for paper in papers %}
-                        {% include "paper.html" %}
-                    {% endfor %}
-            </div>
+            {% for paper in papers %}
+                {% include "paper.html" %}
+            {% endfor %}
+        </div>
 {% endblock %}

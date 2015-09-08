@@ -6,6 +6,9 @@
         {% if paper.arxiv %}
             <a class=button href="{{ paper.arxiv }}">arXiv</a>
         {% endif %}
+        {% if paper.reviews %}
+            <a class=button href="{% url reviews paper.slug %}">Reviews</a>
+        {% endif %}
         {% if paper.authors %}
         <p class=byline>{{ paper.authors }}</p>
         {% endif %}
