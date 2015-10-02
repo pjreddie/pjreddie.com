@@ -72,6 +72,7 @@ x = x
 </div>
 
 **Use it when:** your goal is something like `a = a`.
+
 ##<a name=assumption></a>`assumption`##
 
 If the thing you are trying to prove is already in your context, use `assumption` to finish the proof.
@@ -99,15 +100,51 @@ p
 </div>
 </div>
 
+**Use it when:** your goal is already in your "context" of terms you already know.
+
 ##<a name=apply></a>`apply`##
 
-If you have the hypothesis that `x` implies `y`, you can `apply` that hypothesis to `x` to get `y`.
+If we have a hypothesis that says that `x` implies `y`, we know that to prove `y` all we really have to do is prove `x`. We can `apply` that hypothesis to a goal of `y` to transform it into `x`.
 
-In this example we prove modus ponens. We know that `(p -> q)` and we assume `p` so we can use `apply` to turn our assumption `p` into `q`.
+In this example we prove modus ponens. We know that `(p -> q)` and we want to prove `q` so we can use `apply` the hypothesis to transform the goal from `q` into `p`. Then we see that `p` is already an assumption so we are done!
 
 <div class=example>
 <div class=code>
 <pre><span class=checked>Lemma modus_ponens:
+  forall p q : Prop, (p -> q) -> p -> q.
+Proof.
+  intros.</span>
+  apply H.
+  assumption.
+Qed.
+</pre>
+</div>
+<div class=context>
+<pre>
+1 subgoal
+p : Prop
+q : Prop
+H : p -> q
+H0 : p
+-----------(1/1)
+q
+</pre>
+</div>
+</div>
+
+**Use it when:** you have a hypothesis where the conclusion (on the right of the arrow) is the same as your goal.
+
+**Advanced usage:** If we know that `x` implies `y` and we know that `x` is true, we can transfrom `x` into `y` in our context using `apply`.
+
+In this example we prove modus ponens again. We still have our hypothesis,  
+`H: p -> q`  
+This time we `apply` it to a different hypothesis,  
+`H0: p`  
+to turn that hypothesis into `q`.
+
+<div class=example>
+<div class=code>
+<pre><span class=checked>Lemma modus_ponens_again:
   forall p q : Prop, (p -> q) -> p -> q.
 Proof.
   intros.</span>
@@ -129,9 +166,10 @@ q
 </div>
 </div>
 
+
 ##<a name=subst></a>`subst`##
 
-If you know that two identifiers (names for something) are actually the same, you can use `subst` to substitute one for the other.
+If you know that an identifier (name for something) is equal to something else, you can use `subst` to substitute the identifier for the other thing.
 
 In this example we know that `a = b` and we want to show `b = a`. We can use `subst` to transform the `a` in the goal into a `b`, so our goal becomes `b = b`. Then we can finish the proof using `reflexivity`.
 
@@ -162,11 +200,13 @@ b = a
 </div>
 </div>
 
+**Use it when:** you want to transform an identifier into an equivalent term.
+
 ##<a name=rewrite></a>`rewrite`##
 
 If we know two terms are equal we can transform one term into the other using `rewrite`.
 
-While `rewrite` is similar to `subst`, it operates on terms instead of just identities. An identity is just a name like `x`, while a term can be more complex, like a function application: `(f x)`.
+While `rewrite` is similar to `subst`, it also works when both sides of the equality are terms. An identity is just a name like `x`, while a term can be more complex, like a function application: `(f x)`.
 
 In this example we prove that if we have a function `f` and `(f x) = (f y)` then `(f y) = (f x)`. We use `rewrite` to transform `(f x)` in our goal into `(f y)` and finish the proof using `reflexivity`.
 
@@ -195,6 +235,55 @@ y : bool
 H : f x = f y
 -----------(1/1)
 f y = f x
+</pre>
+</div>
+</div>
+
+**Use it when:** you know two terms are equivalent and you want to transform one into the other.
+
+**Advanced usage:** you can also apply `rewrite` backwards, and to terms in your context.
+
+**Backwards**  
+If we have the hypothesis  
+`H : f x = f y`  
+we can change our goal from `f y` into `f x` using `rewrite` backwards:  
+`rewrite <- H`
+
+**In context**  
+We can use `rewrite H1 in H2` to transform one hypothesis using a different hypothesis.
+
+In this example we prove that equality of function application is transitive. We can use either an in-context `rewrite` or a backward `rewrite` on the goal.
+
+<div class=example>
+<div class=code>
+<pre><span class=checked>Inductive bool: Set :=
+  | true
+  | false.
+
+Lemma equality_of_functions_transits:
+  forall (f: bool->bool) x y z,
+    (f x) = (f y) ->
+    (f y) = (f z) ->
+    (f x) = (f z).
+Proof.
+  intros.</span>
+  rewrite H0 in H. (* or rewrite <- H0 *)
+  assumption.
+Qed.
+</pre>
+</div>
+<div class=context>
+<pre>
+1 subgoal
+1 subgoal
+f : bool -> bool
+x : bool
+y : bool
+z : bool
+H : f x = f y
+H0 : f y = f z
+-----------(1/1)
+f x = f z
 </pre>
 </div>
 </div>

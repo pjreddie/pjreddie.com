@@ -5,6 +5,12 @@ from django.shortcuts import render
 from django.conf import settings
 from pjreddie.utils import markdown_to_html
 
+ROOT = os.path.dirname(os.path.realpath(__file__))
+
+def get_path(p):
+	return os.path.join(ROOT, p)
+
+
 def color_words(s, words, color):
     for word in words:
         s = s.replace(word, '<span style="color:%s;">%s</span>'%(color, word))
@@ -28,8 +34,8 @@ def colorify(s):
     return s
 
 def index(request):
-    filename = os.path.join(settings.STATIC_ROOT, 'coq-index', 'index.md')
+    filename = get_path('index.md')
     m = open(filename).read()
     html = markdown_to_html(m, [])
     html = colorify(html)
-    return render(request, 'coq-index.html', {'html': html})
+    return render(request, 'coqindex.html', {'html': html})
