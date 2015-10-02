@@ -139,6 +139,7 @@ INSTALLED_APPS = (
     'projects',
     'papers',
     'darknet',
+    'coqindex',
     'django.contrib.admin',
 	'south',
     # Uncomment the next line to enable admin documentation:

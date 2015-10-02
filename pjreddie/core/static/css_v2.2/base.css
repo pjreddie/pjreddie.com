@@ -13,6 +13,7 @@ html, body{
 }
 pre{
     padding:1em;
+	font-family: 'Ubuntu Mono', monospace;
     background-color:#205;
 }
 code, .code{
@@ -116,7 +117,7 @@ ul.nav li{
 ul.nav li a{
 	text-decoration:none;
 	color:#0ff;
-	padding:1em 2em .5em 0em;
+	padding:1em .8em .5em 0em;
 }
 ul.nav li a:hover {
 	border-bottom:solid 3px #0FF;

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+	{% block head %}
+        <meta name="description" content="Coq Tactic Index: A brief introduction to some common proof tactics.">
+	{% endblock %}
+	{% block title %}Coq Tactic Index{% endblock %}
+    {% block body %}
+    <div class=main>
+        <p id=dnlogo>
+            <img  src="{{ STATIC_URL }}img/coq.png"></img>
+        </p>
+        <h1>Coq Tactics Index</h1>
+        {{ html|safe }}           
+    </div>
+    {% endblock %}
