@@ -294,7 +294,7 @@ If you have an equality in your context that isn't true, you can prove anything 
 
 For `discriminate` to work, the terms must be "structurally" different. This means that both terms are elements of an inductive set but they are built differently, using different constructors (e.g. `true` and `false`, or `(S O)` and `(S (S O))`).
 
-In this example we show that if we assume `true = false` then we can prove anything. Not that we don't specify what `a` is, it really can be anything!
+In this example we show that if we assume `true = false` then we can prove anything. Note that we don't specify what `a` is, it really can be anything!
 
 <div class=example>
 <div class=code>
