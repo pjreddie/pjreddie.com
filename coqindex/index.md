@@ -73,6 +73,40 @@ x = x
 
 **Use it when:** your goal is something like `a = a`.
 
+**Advanced usage:** `reflexivity` will work even if your goal is not syntactically identical on the left and right side of the equality. Both sides just have to *evaluate* to the same term.
+
+In this example we will apply `reflexivity` to a more complicated math equation: (3 + (0 + 2)) = (1 + 4).
+
+<div class=example>
+<div class=code>
+<pre><span class=checked>Inductive nat : Set :=
+  | O
+  | S : nat -> nat.
+
+Fixpoint add (a: nat) (b: nat) : nat :=
+  match a with
+    | O => b
+    | S x => S (add x b)
+  end.
+
+Lemma complex_math:
+    (add 
+        (S (S (S O))) 
+        (add O (S (S O)))) =
+    add (S O) (S (S (S (S O)))).
+Proof.
+    reflexivity.</span>
+Qed.
+</pre>
+</div>
+<div class=context>
+<pre>
+No more subgoals.
+</pre>
+</div>
+</div>
+
+
 ##<a name=assumption></a>`assumption`##
 
 If the thing you are trying to prove is already in your context, use `assumption` to finish the proof.
