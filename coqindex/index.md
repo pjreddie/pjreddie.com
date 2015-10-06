@@ -168,7 +168,7 @@ q
 
 **Use it when:** you have a hypothesis where the conclusion (on the right of the arrow) is the same as your goal.
 
-**Advanced usage:** If we know that `x` implies `y` and we know that `x` is true, we can transfrom `x` into `y` in our context using `apply`.
+**Advanced usage:** If we know that `x` implies `y` and we know that `x` is true, we can transform `x` into `y` in our context using `apply`.
 
 In this example we prove modus ponens again. We still have our hypothesis,  
 `H: p -> q`  
