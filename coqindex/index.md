@@ -29,19 +29,29 @@ h2{
 .context {
     flex-grow: 1;
 }
+h3{
+    margin:0;
+}
 </style>
+###Stage 1: Proving Easy Goals
 [`reflexivity`](#reflexivity)  
 [`assumption`](#assumption)  
+[`discriminate`](#discriminate)  
+###Stage 2: Transforming Your Goal
 [`apply`](#apply)  
 [`subst`](#subst)  
 [`rewrite`](#rewrite)  
-[`discriminate`](#discriminate)  
+[`simpl`](#simpl)  
+[`cut`](#cut)  
+###Stage 3: Breaking Apart Your Goal
 [`destruct`](#destruct)  
 [`inversion`](#inversion)  
-[`simpl`](#simpl)  
 [`induction`](#induction)  
+###Stage 4: Powerful Automatic Tactics
+[`auto`](#auto)  
+[`intuition`](#intuition)  
+[`omega`](#omega)  
   
-[Everything in one file](#all)  
   
 -------------------------
 
@@ -322,6 +332,87 @@ f x = f z
 </div>
 </div>
 
+##<a name=simpl></a>`simpl`##
+
+When we have a complex term we can use `simpl` to crunch it down.
+
+In this example we prove that adding zero to any number returns the same number. We use `simpl` to "run" the `add` function in the goal. Since in the example the first argument to `add` is `O`, it simplifies the function application to just the result.
+
+<div class=example>
+<div class=code>
+<pre><span class=checked>Inductive nat : Set :=
+  | O
+  | S : nat -> nat.
+
+Fixpoint add (a: nat) (b: nat) : nat :=
+  match a with
+    | O => b
+    | S x => S (add x b)
+  end.
+
+Lemma zero_plus_n_equals_n:
+  forall n, (add O n) = n.
+Proof.
+  intros.</span>
+  simpl.
+  reflexivity.
+Qed.
+</pre>
+</div>
+<div class=context>
+<pre>
+1 subgoal
+n : nat
+-----------(1/1)
+add O n = n
+</pre>
+</div>
+</div>
+
+
+##<a name=cut></a>`cut`##
+
+Sometimes to prove a goal you need an extra hypothesis. In this case, you can add the hypothesis using `cut`. This allows you to first prove your goal using the new hypothesis, and then prove that the new hypothesis is also true.
+
+In this example we will prove that if `x = y` and `y = z` then `f x = f z`, for any function `f`. This is related to transitivity. To prove the goal, we first add the intermediate proposition that `x = z`. Then we have to prove that `x = z` implies `f x = f z`, and that `x` is actually equal to `z`.
+
+<div class=example>
+<div class=code>
+<pre><span class=checked>Inductive bool: Set :=
+  | true
+  | false.
+
+Lemma xyz:
+  forall (f: bool->bool) x y z,
+    x  = y -> y = z -> f x = f z.
+Proof.
+  intros.
+  cut (x = z).</span>
+  - intro. subst. reflexivity.
+  - subst. reflexivity.
+Qed.
+</pre>
+</div>
+<div class=context>
+<pre>
+2 subgoals
+f : bool -> bool
+x : bool
+y : bool
+z : bool
+H : x = y
+H0 : y = z
+---------(1/2)
+x = z -> f x = f z
+---------(2/2)
+x = z
+</pre>
+</div>
+</div>
+
+**Use it when:** you want to add an intermediate hypothesis to your proof that will make the proof easier.
+
+
 ##<a name=discriminate></a>`discriminate`##
 
 If you have an equality in your context that isn't true, you can prove anything using `discriminate`.
@@ -428,43 +519,6 @@ a = b
 </div>
 </div>
 
-##<a name=simpl></a>`simpl`##
-
-When we have a complex term we can use `simpl` to crunch it down.
-
-In this example we prove that adding zero to any number returns the same number. We use `simpl` to "run" the `add` function in the goal. Since in the example the first argument to `add` is `O`, it simplifies the function application to just the result.
-
-<div class=example>
-<div class=code>
-<pre><span class=checked>Inductive nat : Set :=
-  | O
-  | S : nat -> nat.
-
-Fixpoint add (a: nat) (b: nat) : nat :=
-  match a with
-    | O => b
-    | S x => S (add x b)
-  end.
-
-Lemma zero_plus_n_equals_n:
-  forall n, (add O n) = n.
-Proof.
-  intros.</span>
-  simpl.
-  reflexivity.
-Qed.
-</pre>
-</div>
-<div class=context>
-<pre>
-1 subgoal
-n : nat
------------(1/1)
-add O n = n
-</pre>
-</div>
-</div>
-
 ##<a name=induction></a>`induction`##
 
 If we want to prove a theorem using induction, we use `induction`!
@@ -511,137 +565,84 @@ add (S n) O = S n
 </div>
 </div>
 
+##<a name=auto></a>`auto`##
 
-##<a name=all></a>All the tactics!##
+Sometimes a goal looks easy but you may be feeling lazy. Why not try `auto`?
 
-Here are all examples in one file. Yay!
+`auto` will intro variables and hypotheses and then try applying various other tactics to solve the goal. Which other tactics does it try? Who knows man.
 
-<pre>
-(* reflexivity: use reflexivity when your goal is to prove
-    that something equals itself. *)
+The good thing is that `auto` can't fail. At worst it will leave your goal unchanged. So go wild!
 
-Lemma everything_is_itself:
-  forall x: Set, x = x.
+In this example we'll prove modus tollens using just `auto`!
+
+<div class=example>
+<div class=code>
+<pre><span class=checked>Lemma modus_tollens:
+forall p q: Prop, (p->q) -> ~q -> ~p.
 Proof.
-  intro.
-  reflexivity.
-Qed.
-
-(* assumption: use assumption to prove a goal
-    that you is already assumed in your hypotheses *)
-
-Lemma everything_implies_itself:
-  forall p: Prop, p -> p.
-Proof.
-  intros.
-  assumption.
-Qed.
-
-(* apply: if you have the hypothesis that x implies y,
-    you can apply that hypothesis to x to get y *)
-
-Lemma modus_ponens:
-  forall p q : Prop, (p -> q) -> p -> q.
-Proof.
-  intros.
-  apply H in H0.
-  assumption.
-Qed.
-
-Inductive bool: Set :=
-  | true
-  | false.
-
-(* subst: if you have a hypothesis that two variables are the same
-    you can use subst to substitute one for the other *)
-
-Lemma equality_commutes:
-forall (a: bool) (b: bool), a = b -> b = a.
-Proof.
-  intros.
-  subst.
-  reflexivity.
-Qed.
-
-(* rewrite: if you have a hypothesis that two expressions are equal
-    you change one term into the other using rewrite *)
-
-Lemma equality_of_functions_commutes:
-  forall (f: bool->bool) x y,
-    (f x) = (f y) -> (f y) = (f x).
-Proof.
-  intros.
-  rewrite H.
-  reflexivity.
-Qed.
-
-(* discriminate: if you have a equality in your context that isn't true
-    you can prove anything using discriminate *)
-
-Lemma incorrect_equality_implies_anything:
-  forall a, false = true -> a.
-Proof.
-  intros.
-  discriminate.
-Qed.
-
-Definition not (b: bool) : bool :=
-  match b with
-    | true => false
-    | false => true
-  end.
-
-(* destruct: performs case analysis on an inductive term *)
-
-Lemma not_not_x_equals_x:
-  forall b, not (not b) = b.
-Proof.
-  intro.
-  destruct b.
-  - reflexivity.
-  - reflexivity.
-Qed.
-
-Inductive nat : Set :=
-  | O
-  | S : nat -> nat.
-
-(* inversion: sometimes you have a hypothesis that can't be true
-    unless other things are also true. inversion add those other things
-    to your context, or solve the goal if it can't *)
-
-Lemma successors_equal_implies_equal:
-  forall a b, S a = S b -> a = b.
-Proof.
-  intros.
-  inversion H.
-  reflexivity.
-Qed.
-
-Fixpoint add (a: nat) (b: nat) : nat :=
-  match a with
-    | O => b
-    | S x => S (add x b)
-  end.
-
-(* simpl : Use simpl to crunch down a term *)
-
-Lemma zero_plus_n_equals_n:
-  forall n, (add O n) = n.
-Proof.
-  intros.
-  simpl.
-  reflexivity.
-Qed.
-
-(* induction: prove something using induction *)
-
-Lemma n_plus_zero_equals_n:
-  forall n, (add n O) = n.
-Proof.
-  induction n.
-- simpl. reflexivity. (* Or just reflexivity *)
-- simpl. rewrite IHn. reflexivity.
+  auto.</span>
 Qed.
 </pre>
+</div>
+<div class=context>
+<pre>
+No more subgoals.
+</pre>
+</div>
+</div>
 
+**Use it when:** you think the goal is easy but you're feeling lazy.
+
+##<a name=intuition></a>`intuition`##
+
+If you thought `auto` was good, `intuition` is even better!
+
+The `intuition` tactic also `intros` variables and hypotheses and applies tactics to them, including `auto`. Sometimes it works when `auto` doesn't.
+
+In this example we'll prove that if we know the conjunction of `p` and `q`, we also know `p` by itself. `auto` can't solve the goal by itself but `intuition` can.
+
+<div class=example>
+<div class=code>
+<pre><span class=checked>Lemma conjunction_elimination:
+forall p q, p /\ q -> p.
+Proof.
+  intuition.</span>
+Qed.
+</pre>
+</div>
+<div class=context>
+<pre>
+No more subgoals.
+</pre>
+</div>
+</div>
+
+**Use it when:** `auto` doesn't work but you think it should be easy to prove.
+
+##<a name=omega></a>`omega`##
+
+If you are trying to prove something "mathy" you should try the `omega` tactic. It's good at reasoning about goals involving nats and integers.
+
+In this example we'll prove that an odd number can never equal an even number using  `omega`.
+
+<div class=example>
+<div class=code>
+<pre><span class=checked>Require Import ZArith.
+(* or Require Import Omega. *)
+
+Lemma odds_arent_even:
+forall a b: nat, 2*a + 1 <> 2*b.
+Proof.
+  intros.
+  omega.</span>
+Qed.
+</pre>
+</div>
+<div class=context>
+<pre>
+No more subgoals.
+</pre>
+</div>
+</div>
+
+**Use it when:** your goal has some math in it.
