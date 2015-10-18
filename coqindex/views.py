@@ -13,20 +13,20 @@ def get_path(p):
 
 def color_words(s, words, color):
     for word in words:
-        s = s.replace(word, '<span style="color:%s;">%s</span>'%(color, word))
+        s = s.replace(word, '<span class="%s">%s</span>'%(color, word))
     return s
 
 def colorify(s):
-    red = "#f00"
-    purple = "#c0f"
-    blue = "#00f"
-    green = "#0a0"
-    lblue = "#0aa"
+    red = "coq_red"
+    purple = "coq_purple"
+    blue = "coq_blue"
+    green = "coq_gren"
+    lblue = "coq_lblue"
     
-    s = re.sub(r'Lemma (\w*:)', r'Lemma <span style="color:%s;">\1</span>'%blue, s)
-    s = re.sub(r'Inductive (\w*:)', r'Inductive <span style="color:%s;">\1</span>'%blue, s)
-    s = re.sub(r'Definition (\w*)', r'Definition <span style="color:%s;">\1</span>'%blue, s)
-    s = re.sub(r'Fixpoint (\w*)', r'Fixpoint <span style="color:%s;">\1</span>'%blue, s)
+    s = re.sub(r'Lemma (\w*:)', r'Lemma <span class="%s">\1</span>'%blue, s)
+    s = re.sub(r'Inductive (\w*:)', r'Inductive <span class="%s">\1</span>'%blue, s)
+    s = re.sub(r'Definition (\w*)', r'Definition <span class="%s">\1</span>'%blue, s)
+    s = re.sub(r'Fixpoint (\w*)', r'Fixpoint <span class="%s">\1</span>'%blue, s)
     s = color_words(s, ['Lemma', 'Inductive', 'Definition', 'Fixpoint'], red)
     s = color_words(s, ['forall', 'match', 'with', 'end'], green)
     s = color_words(s, ['Proof.', 'Qed.'], purple)

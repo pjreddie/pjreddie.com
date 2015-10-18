@@ -1,42 +1,8 @@
-<style>
-hr{
-    width:100%;
-}
-h2 code{
-    color:#0ff;
-}
-a code{
-    color:#0ff;
-}
-h2{
-    margin-top:4em;
-}
-.checked{
-    background-color:#020;
-}
-.example {
-    overflow:scroll;
-    display:flex;
-    background-color:#205;
-}
-.example pre{
-    margin:0;
-}
-.code {
-    width: 380px;
-    border-right: 2px solid #0ff;
-}
-.context {
-    flex-grow: 1;
-}
-h3{
-    margin:0;
-}
-</style>
 ###Stage 1: Proving Easy Goals
 [`reflexivity`](#reflexivity)  
 [`assumption`](#assumption)  
 [`discriminate`](#discriminate)  
+[`constructor`](#constructor)  
 ###Stage 2: Transforming Your Goal
 [`apply`](#apply)  
 [`subst`](#subst)  
@@ -145,6 +111,73 @@ p
 </div>
 
 **Use it when:** your goal is already in your "context" of terms you already know.
+
+##<a name=discriminate></a>`discriminate`##
+
+If you have an equality in your context that isn't true, you can prove anything using `discriminate`.
+
+For `discriminate` to work, the terms must be "structurally" different. This means that both terms are elements of an inductive set but they are built differently, using different constructors (e.g. `true` and `false`, or `(S O)` and `(S (S O))`).
+
+In this example we show that if we assume `true = false` then we can prove anything. Note that we don't specify what `a` is, it really can be anything!
+
+<div class=example>
+<div class=code>
+<pre><span class=checked>Inductive bool: Set :=
+  | true
+  | false.
+
+Lemma incorrect_equality_implies_anything:
+  forall a, false = true -> a.
+Proof.
+  intros.</span>
+  discriminate.
+Qed.
+</pre>
+</div>
+<div class=context>
+<pre>
+1 subgoal
+a : Type
+H : false = true
+-----------(1/1)
+a
+</pre>
+</div>
+</div>
+
+##<a name=constructor></a>`constructor`##
+
+When your goal is to show that you can build up a term that has some type and you have a constructor to do just that, use `constructor`!
+
+In this example we will prove that two is even. First we say what it means for a number to be even. We define zero to be even, and the proof of that is the term `even_O`. The next line says that if we can prove that `n` is even than we can also prove that `(S (S n))` (or `n + 2`) is even.
+
+To prove our lemma, we first call `constructor`. Coq sees that our goal matches the rightmost side of a constructor (namely `even_S`). Thus it transforms our goal into the left side of that constructor, so instead of proving that `(S (S O))` is even now we only need to prove that `O` is even. We use `constructor` again and this time Coq sees that our goal matches the right side of a different constructor, `even_O`. This constructor has no preconditions (since zero is defined to be even, gotta start somewhere) so we are done!
+
+<div class=example>
+<div class=code>
+<pre><span class=checked>Inductive even : nat -> Prop:=
+ | even_O: even O
+ | even_S: forall n, even n -> even (S(S n)).
+
+Lemma two_is_even:
+  even (S (S O)).
+Proof.
+  constructor.</span>
+  constructor.
+Qed.
+</pre>
+</div>
+<div class=context>
+<pre>
+1 subgoal
+-----------(1/1)
+even O
+</pre>
+</div>
+</div>
+
+**Use it when:** your goal matches the right side of a constructor for some type.
+
 
 ##<a name=apply></a>`apply`##
 
@@ -412,39 +445,6 @@ x = z
 
 **Use it when:** you want to add an intermediate hypothesis to your proof that will make the proof easier.
 
-
-##<a name=discriminate></a>`discriminate`##
-
-If you have an equality in your context that isn't true, you can prove anything using `discriminate`.
-
-For `discriminate` to work, the terms must be "structurally" different. This means that both terms are elements of an inductive set but they are built differently, using different constructors (e.g. `true` and `false`, or `(S O)` and `(S (S O))`).
-
-In this example we show that if we assume `true = false` then we can prove anything. Note that we don't specify what `a` is, it really can be anything!
-
-<div class=example>
-<div class=code>
-<pre><span class=checked>Inductive bool: Set :=
-  | true
-  | false.
-
-Lemma incorrect_equality_implies_anything:
-  forall a, false = true -> a.
-Proof.
-  intros.</span>
-  discriminate.
-Qed.
-</pre>
-</div>
-<div class=context>
-<pre>
-1 subgoal
-a : Type
-H : false = true
------------(1/1)
-a
-</pre>
-</div>
-</div>
 
 ##<a name=destruct></a>`destruct`##
 
