@@ -11,6 +11,7 @@ class Post( models.Model ):
     date = models.DateTimeField(auto_now_add=True)
     slug = models.SlugField(blank=True, null=True)
     logo = models.ImageField( upload_to="image", null=True, blank=True )
+    visible=models.BooleanField(default=True)
     
     def save(self, *args, **kwargs):
         if not self.slug:
