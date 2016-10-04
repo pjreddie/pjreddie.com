@@ -9,6 +9,7 @@
 [`rewrite`](#rewrite)  
 [`simpl`](#simpl)  
 [`cut`](#cut)  
+[`unfold`](#unfold)
 ###Stage 3: Breaking Apart Your Goal
 [`destruct`](#destruct)  
 [`inversion`](#inversion)  
@@ -444,6 +445,31 @@ x = z
 </div>
 
 **Use it when:** you want to add an intermediate hypothesis to your proof that will make the proof easier.
+
+##<a name=unfold></a>`unfold`##
+
+Sometimes you want to look inside a definition. You can use `unfold` to change the definition into its right-hand side.
+
+<div class=example>
+<div class=code>
+<pre><span class=checked>Definition inc (n : nat) : nat := n + 1.
+
+Lemma foo_defn : forall n, inc n = S n.
+Proof.
+  intros n.
+  (* This doesn't work because rewrite can't "see through" the definition: *)
+  Fail rewrite <- plus_n_Sm.
+  unfold inc.
+  (* Now it works! *)
+  rewrite <- plus_n_Sm.
+  rewrite <- plus_n_O.
+  reflexivity.
+Qed.
+</pre>
+</div>
+</div>
+
+**Use it when:** you want to replace a definition with its body.
 
 
 ##<a name=destruct></a>`destruct`##
