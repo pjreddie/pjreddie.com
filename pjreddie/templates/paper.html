@@ -9,6 +9,9 @@
         {% if paper.reviews %}
             <a class=button href="{% url reviews paper.slug %}">Reviews</a>
         {% endif %}
+        {% if paper.slides %}
+            <a class=button href="{{ paper.slides }}">Slides</a>
+        {% endif %}
         {% if paper.authors %}
         <p class=byline>{{ paper.authors }}</p>
         {% endif %}

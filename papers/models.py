@@ -9,6 +9,7 @@ class Paper( models.Model ):
     authors = models.TextField(null=True, blank=True)
     date = models.DateTimeField(auto_now_add=True)
     arxiv = models.URLField(max_length=1000, null=True, blank=True)
+    slides = models.URLField(max_length=1000, null=True, blank=True)
     link = models.URLField(max_length=1000, null=True, blank=True)
     pdf = models.FileField(upload_to="files/papers", null=True, blank=True)
     reviews = models.TextField(null=True, blank=True)
