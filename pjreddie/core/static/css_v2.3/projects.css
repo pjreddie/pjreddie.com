@@ -16,7 +16,8 @@
 }
 
 .project:hover {
-    background-color:#044;
+    background: rgb(0, 64, 64); 
+    background: rgba(0, 255, 255, .25);
 }
 .projects .title{
     padding: 0em 1em;

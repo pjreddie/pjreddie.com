@@ -111,7 +111,8 @@ ul.nav{
     z-index:9;
 }
 ul.nav li:hover {
-    background-color:#044;
+    background: rgb(0, 64, 64); 
+    background: rgba(0, 255, 255, .25);
 }
 ul.nav li{
     float:left;
@@ -153,36 +154,37 @@ padding:0px 1em;
         border-left:3px #0ff solid;
         font-family: 'Roboto Slab', serif;
 }
-@media (max-width: 360px) {
+@media (max-width: 580px) {
+.top .bar.blue{
+    display:none !important;
+}
 #dncircle{
     position:absolute;
-    width:25px;
+    width:57px;
     top:0px;
-    left:0px;
-    opacity:1;
+    left:-10px;
+    opacity:.5;
 }
-    ul.nav li:hover {
-        background-color:#044;
-    }
     .nav{
         padding-left:0em;
     }
 
     .header{
+        margin-top:1em;
         font-size:2em;
 padding:0em;
         padding-right:0em .5em;
     }
     ul.nav{
-padding:0em;
+        padding:0em;
     }
     ul.nav li {
         box-sizing:border-box;
-width:100%;
-margin:0em 0em;
-padding: 0em 1em;
-         font-size:1em;
-         border-bottom: 1px #0ff solid;
+        width:100%;
+        margin:0em 0em;
+        padding: 1em 1em;
+        font-size:1em;
+        border-bottom: 1px #0ff solid;
     }
 }
 footer{
