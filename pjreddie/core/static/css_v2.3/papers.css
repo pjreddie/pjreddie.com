@@ -1,0 +1,38 @@
+p{
+    margin-top: .5em;
+}
+.button{
+    float: right;
+    border:2px solid #0cc;
+    padding:.2em;
+    color: #0cc;
+/*  
+    font-size:12px;
+    background-color:black;
+    */
+    margin-left:1em;
+}
+.button:hover {
+    color: #0ff;
+    border:2px solid #0ff;
+}
+.byline{
+    margin:0em;
+	font-size:.75em;
+    font-style:italic;
+    font-family: 'Droid Serif', serif;
+}
+.desc{
+    margin:0em;
+    color:#bff;
+}
+
+.small{
+	font-size:.25em;
+}
+.paper{
+    margin-top:1em;
+}
+.paper h4{
+    margin:0;
+}

@@ -1,0 +1,49 @@
+/* Coq index css */
+.code .coq_red{
+    color:#f00;
+}
+.code .coq_purple{
+    color:#c0f;
+}
+.code .coq_blue{
+    color:#00f;
+}
+.code .coq_green{
+    color: #0a0;
+}
+.code .coq_lblue{
+    #0aa;
+}
+.coqindex hr{
+    width:100%;
+}
+.coqindex h2 code{
+    color:#0ff;
+}
+.coqindex a code{
+    color:#0ff;
+}
+.coqindex h2{
+    margin-top:4em;
+}
+.coqindex .checked{
+    background-color:#020;
+}
+.coqindex .example {
+    overflow:scroll;
+    display:flex;
+    background-color:#205;
+}
+.coqindex .example pre{
+    margin:0;
+}
+.coqindex .code {
+    width: 380px;
+    border-right: 2px solid #0ff;
+}
+.coqindex .context {
+    flex-grow: 1;
+}
+.coqindex h3{
+    margin:0;
+}

@@ -1,0 +1,76 @@
+#dnlogo{
+    text-align:center;
+}
+#dnlogo img{
+    max-width:15em;
+    margin:1em auto;
+    width:100%;
+}
+html, body{
+    height:100%;
+}
+.outside{
+    position:relative;
+}
+.first img{
+    width:100%;
+    margin:0;
+    display:block;
+}
+.center{
+    padding: 0 100px;
+    margin:0 auto;
+    max-width:35em;
+}
+.rest{
+    background-image:url("/static/img/vines.png");
+    background-repeat:repeat-y;
+    background-size:100% auto;
+    height:100%;
+}
+.left, .right{
+    height:100%;
+    position:absolute;
+    width:100px;
+    left:0;
+    top:0;
+}
+.left{
+    left:auto;
+}
+.right{
+    left:auto;
+    right:0;
+}
+.top .bar.blue{
+    display:none;
+}
+.top .bar.green{
+    display:none;
+}
+.date{
+	float:right;
+	font-style:italic;
+	font-size:.75em;
+    margin-left:2em;
+}
+.post{
+    position: relative;
+	margin:1em auto;
+    padding:.25em 1em;
+    border:.25em solid #0ff;
+}
+.post:hover {
+    border:.25em solid #bff;
+    color:#bff;
+}
+.post h3{
+	margin-bottom:.5em;
+    margin-top:.5em;
+}
+.post .logo {
+    position:absolute;
+    width:8em;
+    right:-2em;
+    top:-2em;
+}

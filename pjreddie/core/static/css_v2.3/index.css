@@ -1,0 +1,18 @@
+#ponies{
+    text-align:center;
+}
+#external{
+    text-align:center;
+}
+#external img{
+    max-height:60px;
+}
+#ponies img{
+    max-height:90px;
+}
+.top .bar.blue{
+    display:block;
+}
+.top .bar.green{
+    display:block;
+}
