@@ -12,6 +12,9 @@
         {% if paper.slides %}
             <a class=button href="{{ paper.slides }}">Slides</a>
         {% endif %}
+        {% if paper.talk %}
+            <a class=button href="{{ paper.talk }}">Talk</a>
+        {% endif %}
         {% if paper.authors %}
         <p class=byline>{{ paper.authors }}</p>
         {% endif %}
