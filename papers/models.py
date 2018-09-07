@@ -15,7 +15,7 @@ class Paper( models.Model ):
     pdf = models.FileField(upload_to="files/papers", null=True, blank=True)
     reviews = models.TextField(null=True, blank=True)
     slug = models.SlugField(blank=True, null=True)
-    def __unicode__(self):
+    def __str__(self):
         return self.title
 
     def save(self, *args, **kwargs):

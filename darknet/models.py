@@ -21,14 +21,14 @@ class Post( models.Model ):
     def html(self):
         return markdown_to_html( self.body, self.images.all() )
 
-    def __unicode__( self ):
+    def __str__( self ):
         return self.title
 
 class Image( models.Model ):
     name = models.CharField( max_length=100 )
     image = models.ImageField( upload_to="image" )
-    project = models.ForeignKey(Post, blank=True, null=True, related_name = "images")
+    project = models.ForeignKey(Post, on_delete=models.CASCADE, blank=True, null=True, related_name = "images")
 
-    def __unicode__( self ):
+    def __str__( self ):
         return self.name
 # Create your models here.
