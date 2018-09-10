@@ -61,7 +61,6 @@ html{
     z-index:-1;
 }
 .main{
-    overflow:hidden;
 	margin:0em auto;
     padding:0em 1em;
     max-width:45em;

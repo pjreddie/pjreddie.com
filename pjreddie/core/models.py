@@ -1,7 +1,7 @@
-
 from django.db import models
 from django.conf import settings
 from django.template.defaultfilters import slugify
+from pjreddie.utils import markdown_to_html
 
 class File(models.Model):
     upload = models.FileField(upload_to="files")
@@ -9,19 +9,18 @@ class File(models.Model):
         return self.upload.url
 
 
-"""
 class Page( models.Model ):
     title = models.CharField( max_length=100 )
     description = models.TextField(null=True, blank=True)
+    url = models.CharField( max_length=100 )
     body = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
-    slug = models.SlugField(blank=True, null=True)
-    visible=models.BooleanField(default=True)
+    base=models.BooleanField(default=True)
     
     def save(self, *args, **kwargs):
-        if not self.slug:
-            self.slug = slugify(self.title)
-        super(Post, self).save(*args, **kwargs)
+        if not self.url:
+            self.url = slugify(self.title)
+        super(Page, self).save(*args, **kwargs)
 
     def html(self):
         return markdown_to_html( self.body, self.images.all() )
@@ -36,4 +35,4 @@ class Image( models.Model ):
 
     def __str__( self ):
         return self.name
-"""
+

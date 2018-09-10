@@ -31,6 +31,7 @@ urlpatterns = [
 	path('projects/', projects.views.projects, name='projects'),
 	path('coq-tactics/', coqindex.views.index, name='coqindex'),
 	path('yolo/', redirect('/darknet/yolo/')),
+	path('yolo9000/', redirect('/darknet/yolo/')),
 	path('darknet/', darknet.views.posts, name='posts'),
 	path('darknet/<slug:slug>/', darknet.views.post, name='post'),
 	path('publications/<slug:slug>/', papers.views.reviews, name='reviews'),
@@ -51,4 +52,5 @@ urlpatterns = [
 		{'document_root': os.path.join(settings.STATIC_ROOT, 'coq-index')}),
 	path('pokemon-heart/<path:path>', django.views.static.serve,
 		{'document_root': os.path.join(settings.STATIC_ROOT, 'pokemon')}),
+	path('<path:url>/', pjreddie.core.views.page, name='page'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
